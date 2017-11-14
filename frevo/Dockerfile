@@ -1,7 +1,10 @@
-FROM openjdk:8-jre-slim
-
+## Running locally:
 # git clone https://git.repository-pert.ismb.it/ftavakolizadeh/ContinuousIntegration.git
 # git clone https://git.repository-pert.ismb.it/mrappaport/cpswarm.git frevo/cpswarm
+# docker build -t frevo-test .
+# docker run -v /path-to-testsuite:/home/testsuite frevo-test
+
+FROM openjdk:8-jre-slim
 
 COPY cpswarm/frevo /home
 

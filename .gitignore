@@ -1,0 +1,5 @@
+frevo/cpswarm/
+frevo/testsuite/*.hash
+frevo/testsuite/*.txt
+minisim/SimulationWrapper/
+minisim/WrappedMinisim/
