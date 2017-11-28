@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<icomponent>
+	<config>
+		<entry key="classdir" type="STRING" value="problem"/>
+		<entry key="classname" type="STRING" value="problem.Problem"/>
+		<entry key="name" type="STRING" value="Emergency Exit ROS"/>
+		<entry key="description" type="STRING" value="<p>A simulation where multiple agents try to find the emergency exit(s) using ROS simulations.</p><p>&nbsp;</p>
+"/>
+		<entry key="image" type="STRING" value="EmergencyExit.png"/>
+	</config>
+	<properties>
+		<propentry key="steps" type="INT" value="10" description="Maximum number of steps the agents are allowed to make."/>
+		<propentry key="swarmMembers" type="INT" value="1" description="Number of agents in the swarm."/>
+		<propentry key="rosWs" type="STRING" value="" description="Absolute path to the ROS workspace, e.g. /home/user/my_ros_ws."/>
+		<propentry key="rosPackage" type="STRING" value="ros/emergency_exit" description="Name of the ROS package, i.e. relative path from the ROS workspace's source folder to the ROS package implementing the simulation, e.g. my_ros_pkg."/> 
+		<propentry key="environment" type="ENUM" value="small_maze" enumName="helper.Environment" description="Choose one of the existing environments."/>
+	</properties>
+	<requirements>
+		<reqentry key="inputnumber" type="INT" value="0"/>
+		<reqentry key="outputnumber" type="INT" value="0"/>
+		<reqentry key="minimumCandidates" type="INT" value="1"/>
+		<reqentry key="maximumCandidates" type="INT" value="2"/>
+	</requirements>
+</icomponent>
