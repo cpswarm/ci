@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Swarm Architecture" version="4">
+  <OBJECT>
+    <ID name="Swarm Architecture" mc="Standard.StaticDiagram" uid="dee32a0f-e84c-4ef9-adf1-c1a39032dacc"/>
+    <PID name="Swarm" mc="Standard.Package" uid="e3919a6a-01d8-4083-9f74-965342ee1ca7"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">188</ATT>
+      <ATT name="UiData"><![CDATA[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]]></ATT>
+      <ATT name="Name"><![CDATA[Swarm Architecture]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Represented">
+        <ID name="Swarm" mc="Standard.Class" uid="25069b39-d193-4525-9aaf-c9e1987588b4"/>
+        <REFOBJ>
+          <ID name="member" mc="Standard.AssociationEnd" uid="a88a46ad-feac-42f8-b403-6738c9d442a2"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.AssociationEnd" uid="9302223a-3ff0-4a0c-9945-206d3d482f1b"/>
+        </REFOBJ>
+        <ID name="Swarm Member" mc="Standard.Class" uid="1e98111e-f295-4b3f-a7e2-cbd696a12034"/>
+        <REFOBJ>
+          <ID name="currentPos" mc="Standard.Attribute" uid="dcf6c6a8-d141-41ef-a582-17a5e17bcac0"/>
+        </REFOBJ>
+      </LINK>
+      <LINK relation="Extension">
+        <FOREIGNID name="BlockDiagram" mc="Infrastructure.Stereotype" uid="00bc42ac-0000-1016-0000-000000000000"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

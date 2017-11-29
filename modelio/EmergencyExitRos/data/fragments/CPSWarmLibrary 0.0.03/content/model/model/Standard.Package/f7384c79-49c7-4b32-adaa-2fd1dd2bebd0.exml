@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Sensor" version="4">
+  <OBJECT>
+    <ID name="Sensor" mc="Standard.Package" uid="f7384c79-49c7-4b32-adaa-2fd1dd2bebd0"/>
+    <PID name="UML Model" mc="Standard.Package" uid="18c707f5-2ae9-4515-9a11-0241f46b08b2"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Sensor]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="POI Sensor" mc="Standard.Class" uid="530beff5-15ca-4160-9818-ec77dc626c8c"/>
+        <COMPID name="Range Sensor" mc="Standard.Class" uid="f584517a-9e86-401c-a8c1-ba34d84b6658"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

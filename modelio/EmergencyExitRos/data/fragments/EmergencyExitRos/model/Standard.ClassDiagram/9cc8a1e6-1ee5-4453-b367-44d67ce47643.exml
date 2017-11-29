@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Goal Definition" version="4">
+  <OBJECT>
+    <ID name="Goal Definition" mc="Standard.ClassDiagram" uid="9cc8a1e6-1ee5-4453-b367-44d67ce47643"/>
+    <PID name="Goal" mc="Standard.Package" uid="9a1b7a4d-a014-4fc6-b9ac-152b9745d2ef"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">294</ATT>
+      <ATT name="UiData"><![CDATA[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]]></ATT>
+      <ATT name="Name"><![CDATA[Goal Definition]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Represented">
+        <ID name="Fitness Function" mc="Standard.Class" uid="885adc88-41f5-4568-8d6b-100f3c356817"/>
+        <REFOBJ>
+          <ID name="exitPos" mc="Standard.Port" uid="b6b74117-01bb-4812-8cef-af5ef28fa5bb"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="currentPos" mc="Standard.Port" uid="3887fd45-94d7-4aad-8436-9fcc53558a01"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="distance" mc="Standard.Port" uid="35462160-94c8-4926-9bd9-71ae50fd48f9"/>
+        </REFOBJ>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="655b215f-76c7-4b20-a52f-fa153461f28f"/>
+          <ATTRIBUTES>
+            <ATT name="Content"></ATT>
+            <ATT name="MimeType"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

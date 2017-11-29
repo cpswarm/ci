@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Swarm Member Architecture" version="4">
+  <OBJECT>
+    <ID name="Swarm Member Architecture" mc="Standard.StaticDiagram" uid="c5721ead-ad88-41a6-8c77-59b8ebac03bf"/>
+    <PID name="Swarm Member" mc="Standard.Class" uid="1e98111e-f295-4b3f-a7e2-cbd696a12034"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">305</ATT>
+      <ATT name="UiData"><![CDATA[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]]></ATT>
+      <ATT name="Name"><![CDATA[Swarm Member Architecture]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Represented">
+        <ID name="Swarm Member" mc="Standard.Class" uid="1e98111e-f295-4b3f-a7e2-cbd696a12034"/>
+        <REFOBJ>
+          <ID name="c" mc="Standard.BindableInstance" uid="e7388f6c-18d6-4461-8905-4574b3c38890"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="np" mc="Standard.Port" uid="e45fdbe8-46d0-4128-9a65-0374a7c226e5"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="na" mc="Standard.Port" uid="274f786f-7aa3-4cdc-bdce-b953bc33f4df"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="na" mc="Standard.Port" uid="8ef72b77-ce71-42bb-93a4-c849c184aa79"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="ns" mc="Standard.BindableInstance" uid="de61525d-99a8-4f97-bf31-8a6e284cc168"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.ConnectorEnd" uid="4ccb556b-3a6e-4df1-804a-bc75138ec8dc"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="n" mc="Standard.ConnectorEnd" uid="6e08a39e-f911-4c78-af8b-02db5be04f3a"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="l" mc="Standard.BindableInstance" uid="c879344c-e9a7-4da9-975c-c2a264eaf859"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="pos" mc="Standard.Port" uid="4e559a28-1cb8-4194-8797-71982ad4abcb"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.ConnectorEnd" uid="8de40163-7668-4535-aea7-43a72e83f604"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="pos" mc="Standard.ConnectorEnd" uid="dd7ae242-217d-47a0-b7db-97cb8e56eca2"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="currentPos" mc="Standard.Attribute" uid="dcf6c6a8-d141-41ef-a582-17a5e17bcac0"/>
+        </REFOBJ>
+      </LINK>
+      <LINK relation="Extension">
+        <FOREIGNID name="InternalBlockDiagram" mc="Infrastructure.Stereotype" uid="00bc42ac-0000-11b9-0000-000000000000"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

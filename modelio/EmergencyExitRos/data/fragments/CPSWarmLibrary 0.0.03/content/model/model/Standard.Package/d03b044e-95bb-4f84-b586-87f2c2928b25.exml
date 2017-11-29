@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Actuator" version="4">
+  <OBJECT>
+    <ID name="Actuator" mc="Standard.Package" uid="d03b044e-95bb-4f84-b586-87f2c2928b25"/>
+    <PID name="UML Model" mc="Standard.Package" uid="18c707f5-2ae9-4515-9a11-0241f46b08b2"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Actuator]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Locomotion" mc="Standard.Class" uid="f4243310-fe97-4e41-b7a2-a8c48ae4663a"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

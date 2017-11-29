@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Problem_Statement" version="4">
+  <OBJECT>
+    <ID name="Problem_Statement" mc="Infrastructure.Stereotype" uid="3f117f8d-6c14-4195-a838-901f66b44e8e"/>
+    <PID name="CPSWarm.diagram" mc="Infrastructure.Profile" uid="05b4a343-ea5c-45ed-8b3c-5a83b2a59eed"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="LabelKey"><![CDATA[%stereotype.Problem_Statement.label]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Standard.StaticDiagram]]></ATT>
+      <ATT name="Name"><![CDATA[Problem_Statement]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

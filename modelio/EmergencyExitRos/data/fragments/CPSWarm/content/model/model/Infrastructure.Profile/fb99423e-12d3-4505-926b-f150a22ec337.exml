@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="CPSWarm.concept" version="4">
+  <OBJECT>
+    <ID name="CPSWarm.concept" mc="Infrastructure.Profile" uid="fb99423e-12d3-4505-926b-f150a22ec337"/>
+    <PID name="CPSWarm" mc="Infrastructure.ModuleComponent" uid="b914be5e-e9d5-4c22-84be-9edec27e429c"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[CPSWarm.concept]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedStereotype">
+        <COMPID name="Swarm_Member" mc="Infrastructure.Stereotype" uid="60ea357a-c4de-400a-9976-13c7d7267aea"/>
+        <COMPID name="Problem" mc="Infrastructure.Stereotype" uid="f283091f-a550-4d99-b720-405387251a3e"/>
+        <COMPID name="Environment" mc="Infrastructure.Stereotype" uid="aa05c1c7-6c3e-4dd8-8a92-782218ac049f"/>
+        <COMPID name="Controller" mc="Infrastructure.Stereotype" uid="6f334597-8a3e-4edd-aaa8-c98367eb8234"/>
+        <COMPID name="FitnessFunction" mc="Infrastructure.Stereotype" uid="404774d2-ac44-4c0e-9560-e20050f52889"/>
+        <COMPID name="Swarm" mc="Infrastructure.Stereotype" uid="e3188ec2-c96c-4b4a-adcd-11f12209e2e1"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

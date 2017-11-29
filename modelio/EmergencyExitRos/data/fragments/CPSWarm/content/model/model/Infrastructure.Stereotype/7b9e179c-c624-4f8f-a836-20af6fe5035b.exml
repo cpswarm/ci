@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Fitness_Definition" version="4">
+  <OBJECT>
+    <ID name="Fitness_Definition" mc="Infrastructure.Stereotype" uid="7b9e179c-c624-4f8f-a836-20af6fe5035b"/>
+    <PID name="CPSWarm.diagram" mc="Infrastructure.Profile" uid="05b4a343-ea5c-45ed-8b3c-5a83b2a59eed"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="LabelKey"><![CDATA[%stereotype.Fitness_Definition.label]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Standard.StaticDiagram]]></ATT>
+      <ATT name="Name"><![CDATA[Fitness_Definition]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

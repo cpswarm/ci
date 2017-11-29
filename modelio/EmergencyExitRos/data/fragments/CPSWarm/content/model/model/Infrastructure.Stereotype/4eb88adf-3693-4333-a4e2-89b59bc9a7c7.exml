@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="SwarmMember_Architecture" version="4">
+  <OBJECT>
+    <ID name="SwarmMember_Architecture" mc="Infrastructure.Stereotype" uid="4eb88adf-3693-4333-a4e2-89b59bc9a7c7"/>
+    <PID name="CPSWarm.diagram" mc="Infrastructure.Profile" uid="05b4a343-ea5c-45ed-8b3c-5a83b2a59eed"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="LabelKey"><![CDATA[%stereotype.SwarmMember_Architecture.label]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Standard.CompositeStructureDiagram]]></ATT>
+      <ATT name="Name"><![CDATA[SwarmMember_Architecture]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

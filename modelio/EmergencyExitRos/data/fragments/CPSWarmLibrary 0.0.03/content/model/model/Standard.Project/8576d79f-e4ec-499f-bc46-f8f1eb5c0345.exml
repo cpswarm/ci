@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="CPSWarmLibrary" version="4">
+  <OBJECT>
+    <ID name="CPSWarmLibrary" mc="Standard.Project" uid="8576d79f-e4ec-499f-bc46-f8f1eb5c0345"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[CPSWarmLibrary]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="UML Model" mc="Standard.Package" uid="18c707f5-2ae9-4515-9a11-0241f46b08b2"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

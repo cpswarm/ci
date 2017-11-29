@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Environment" version="4">
+  <OBJECT>
+    <ID name="Environment" mc="Standard.Package" uid="28bb5ae2-c586-4920-888c-e899a1c17e11"/>
+    <PID name="EmergencyExitRos" mc="Standard.Package" uid="583eb033-273c-4c47-978c-1c90a4e89ac0"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Environment]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="2DEnvironment" mc="Standard.Class" uid="46d9c037-01a9-420d-aca7-1f4a9ed62b85"/>
+        <COMPID name="2DObject" mc="Standard.Class" uid="c958c174-6975-4b16-8a3e-52b041bc800d"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Environment Definition" mc="Standard.ClassDiagram" uid="072b182f-9ed3-455b-9195-f55561432c84"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
