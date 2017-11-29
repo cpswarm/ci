@@ -1,18 +1,21 @@
-## Running locally:
-# git clone https://git.repository-pert.ismb.it/ftavakolizadeh/ContinuousIntegration.git
-# git clone https://git.repository-pert.ismb.it/mrappaport/cpswarm.git frevo/cpswarm
-# docker build -t frevo-test .
-# docker run -v /path-to-testsuite:/home/testsuite frevo-test
+FROM openjdk:8-jre-alpine
 
-FROM openjdk:8-jre-slim
+RUN adduser -u 1000 -S frevo
+USER frevo
 
-COPY cpswarm/frevo /home
-
-WORKDIR /home
+COPY repo/frevo /home/frevo
+WORKDIR /home/frevo
 RUN java -jar createscripts.jar
 
-# testsuite files must be mounted
-# TODO: only mount hash files directory (requires script modification)
-VOLUME /home/testsuite
+# mount to export hash files
+VOLUME /home/frevo/testsuite/hashes
+
 WORKDIR testsuite
-ENTRYPOINT [ "./testsuite.sh"]
+ENTRYPOINT ["sh", "testsuite.sh"]
+
+## Running locally:
+# git clone https://git.repository-pert.ismb.it/ftavakolizadeh/ContinuousIntegration.git
+# git clone https://git.repository-pert.ismb.it/mrappaport/cpswarm.git repo
+# docker build -t frevo-test .
+# docker run -v $(pwd)/hashes:/home/frevo/testsuite/hashes --rm frevo-test -renew
+# docker run -v $(pwd)/hashes:/home/frevo/testsuite/hashes --rm frevo-test
