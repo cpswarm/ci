@@ -3,11 +3,12 @@ FROM openjdk:8-jdk-slim
 RUN apt update && \
     apt install -y ant
 
-RUN adduser --uid 1000 --system frevo
+RUN addgroup --gid 1000 frevo && \
+    adduser --uid 1000 --ingroup frevo --system frevo
 
 COPY repo/frevo /home/frevo
-RUN chown -R frevo /home/frevo
-RUN rm -fr /home/frevo/testsuite/hashes
+RUN chown -R frevo:frevo /home/frevo
+RUN rm /home/frevo/testsuite/hashes/*
 WORKDIR /home/frevo
 
 USER frevo
