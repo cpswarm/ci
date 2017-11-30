@@ -1,17 +1,19 @@
-FROM openjdk:8-jre-alpine
+FROM openjdk:8-jre-slim
 
-RUN adduser -u 1000 -S frevo
-USER frevo
+RUN adduser --uid 1000 --system frevo
 
 COPY repo/frevo /home/frevo
+RUN chown -R frevo /home/frevo
 WORKDIR /home/frevo
+
+USER frevo
 RUN java -jar createscripts.jar
 
 # mount to export hash files
 VOLUME /home/frevo/testsuite/hashes
 
 WORKDIR testsuite
-ENTRYPOINT ["sh", "testsuite.sh"]
+ENTRYPOINT ["./testsuite.sh"]
 
 ## Running locally:
 # git clone https://git.repository-pert.ismb.it/ftavakolizadeh/ContinuousIntegration.git
