@@ -1,4 +1,7 @@
-FROM openjdk:8-jre-slim
+FROM openjdk:8-jdk-slim
+
+RUN apt update && \
+    apt install -y ant
 
 RUN adduser --uid 1000 --system frevo
 
@@ -7,6 +10,7 @@ RUN chown -R frevo /home/frevo
 WORKDIR /home/frevo
 
 USER frevo
+RUN ant build
 RUN java -jar createscripts.jar
 
 # mount to export hash files
