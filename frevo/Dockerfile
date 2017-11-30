@@ -7,6 +7,7 @@ RUN adduser --uid 1000 --system frevo
 
 COPY repo/frevo /home/frevo
 RUN chown -R frevo /home/frevo
+RUN rm -fr /home/frevo/testsuite/hashes
 WORKDIR /home/frevo
 
 USER frevo
@@ -17,6 +18,11 @@ RUN java -jar createscripts.jar
 VOLUME /home/frevo/testsuite/hashes
 
 WORKDIR testsuite
+
+# Remove piping of errors
+RUN sed -i 's/>\/dev\/null 2>&1//g' testsuite.sh
+# Temporarily remove remote minisim test
+RUN rm testcases/MiniSim_NNGA_FMeshed_AR.zse
 ENTRYPOINT ["./testsuite.sh"]
 
 ## Running locally:
