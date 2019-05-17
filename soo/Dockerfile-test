@@ -3,6 +3,8 @@ FROM maven:3-jdk-8
 COPY . /home
 WORKDIR /home
 
+ENV /home/config
+
 RUN mvn -B validate
 
 # install xvfb to create a virtual display for tests
