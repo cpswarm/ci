@@ -25,10 +25,3 @@ RUN sed -i 's/>\/dev\/null 2>&1//g' testsuite.sh
 # Temporarily remove remote minisim test
 RUN rm testcases/MiniSim_NNGA_FMeshed_AR.zse
 ENTRYPOINT ["./testsuite.sh"]
-
-## Running locally:
-# git clone https://git.repository-pert.ismb.it/ftavakolizadeh/ContinuousIntegration.git
-# git clone https://git.repository-pert.ismb.it/mrappaport/cpswarm.git repo
-# docker build -t frevo-test .
-# docker run -v $(pwd)/hashes:/home/frevo/testsuite/hashes --rm frevo-test -renew
-# docker run -v $(pwd)/hashes:/home/frevo/testsuite/hashes --rm frevo-test
