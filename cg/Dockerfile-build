@@ -1,0 +1,14 @@
+FROM maven:3-jdk-8-alpine
+
+COPY repo /home
+WORKDIR /home
+
+RUN mvn -B clean
+RUN mvn validate
+RUN mvn -B package -DskipTests
+
+# To run locally:
+# git clone https://github.com/cpswarm/ci.git
+# cd ci/cg
+# git clone https://github.com/cpswarm/code-generator.git repo
+# docker build -t cg-builder -f Dockerfile-test .
