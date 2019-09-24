@@ -1,6 +1,6 @@
 FROM maven:3-jdk-8-alpine
 
-COPY code-generator /home
+COPY repo /home
 WORKDIR /home
 
 RUN mvn -B clean
@@ -8,6 +8,6 @@ RUN mvn -B test
 
 # To run locally:
 # git clone https://github.com/cpswarm/ci.git
-# cd ci
-# git clone https://github.com/cpswarm/code-generator.git
+# cd ci/cg
+# git clone https://github.com/cpswarm/code-generator.git repo
 # docker build -f Dockerfile-test .
