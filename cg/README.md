@@ -3,16 +3,18 @@
 ## Test
 ```bash
 git clone https://github.com/cpswarm/ci.git
-cd ci/cg
-git clone https://github.com/cpswarm/code-generator.git repo
+git clone https://github.com/cpswarm/code-generator.git cg
+mv ci/cg/Dockerfile-test cg/Dockerfile-test
+cd cg
 docker build -f Dockerfile-test .
 ```
 
 ## Build
 ```bash
 git clone https://github.com/cpswarm/ci.git
-cd ci/cg
-git clone https://github.com/cpswarm/code-generator.git repo
+git clone https://github.com/cpswarm/code-generator.git cg
+mv ci/cg/Dockerfile-build cg/Dockerfile-build
+cd cg
 docker build -t cpswarm/cg-builder -f Dockerfile-build .
 ```
 
