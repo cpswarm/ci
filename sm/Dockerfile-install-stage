@@ -1,0 +1,11 @@
+FROM ubuntu:16.04
+
+COPY . /home
+WORKDIR /home/it.ismb.pert.cpswarm.simulation.stage
+
+RUN apt update && apt install -yq bnd
+
+RUN bnd package stageManager.bndrun
+
+# Final artifact:
+# /home/it.ismb.pert.cpswarm.simulation.stage/stageManager.jar
