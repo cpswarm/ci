@@ -4,5 +4,8 @@ COPY . /home
 WORKDIR /home
 
 RUN npm install --silent
-RUN npm run --silent build:ci
-RUN tar -zcvf artifact.tar.gz -C /home build
+RUN npm run --silent build:linux
+RUN npm run --silent build:win
+#RUN npm run --silent build:mac # this only works on macOS
+
+RUN ls -l build
