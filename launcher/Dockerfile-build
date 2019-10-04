@@ -1,0 +1,8 @@
+FROM electronuserland/builder:wine
+
+COPY . /home
+WORKDIR /home
+
+RUN npm install --silent
+RUN npm run --silent build:ci
+RUN tar -zcvf artifact.tar.gz -C /home build
