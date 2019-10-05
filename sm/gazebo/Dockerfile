@@ -1,4 +1,4 @@
-FROM cpswarm/gazebo-simulator:1.0.7
+FROM cpswarm/gazebo-simulator:latest
 
 LABEL io.k8s.description="Gazebo Simulation Manager with Xfce desktop and VNC Environment" \
       io.k8s.display-name="cpswarm/gazebo-em-ex with Xfce desktop and VNC Environment"
