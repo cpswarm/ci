@@ -1,4 +1,4 @@
-FROM cpswarm/stage-simulator:1.0.3
+FROM cpswarm/stage-simulator:latest
 
 RUN echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc \
 		  && /bin/bash -c "source ~/.bashrc"
