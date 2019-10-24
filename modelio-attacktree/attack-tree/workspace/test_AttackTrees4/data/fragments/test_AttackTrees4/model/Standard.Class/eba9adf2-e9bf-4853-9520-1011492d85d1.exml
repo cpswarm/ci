@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TreeReference" version="4">
+  <OBJECT>
+    <ID name="TreeReference" mc="Standard.Class" uid="eba9adf2-e9bf-4853-9520-1011492d85d1"/>
+    <PID name="OR" mc="Standard.Class" uid="58b856a3-0dad-46ca-affb-e08afc1b5c6a"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[TreeReference]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedAttribute">
+        <OBJECT>
+          <ID name="ref" mc="Standard.Attribute" uid="30ccb9f9-977b-4d86-99d9-52761b2b47e7"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[ref]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="Tree1" mc="Standard.Class" uid="a4f437c6-0d3d-4b69-b2af-447ba339b9fd"/>
+            </LINK>
+            <LINK relation="Extension">
+              <FOREIGNID name="TreeReferenceAttribute" mc="Infrastructure.Stereotype" uid="4f155d1d-2a98-43b0-be60-57d26b75b56f"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="TreeReference" mc="Infrastructure.Stereotype" uid="c85b8741-354e-43f5-be03-a53c72961da3"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

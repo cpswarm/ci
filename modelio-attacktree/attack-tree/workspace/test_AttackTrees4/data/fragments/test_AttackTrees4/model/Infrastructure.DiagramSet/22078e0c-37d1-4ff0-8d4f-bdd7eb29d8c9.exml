@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="test_AttackTrees4" version="4">
+  <OBJECT>
+    <ID name="test_AttackTrees4" mc="Infrastructure.DiagramSet" uid="22078e0c-37d1-4ff0-8d4f-bdd7eb29d8c9"/>
+    <PID name="test_AttackTrees4" mc="Standard.Project" uid="940ba7b7-1616-463c-bb88-d6825e41e852"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[test_AttackTrees4]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="test_attacktrees4" version="4">
+  <OBJECT>
+    <ID name="test_attacktrees4" mc="Standard.Package" uid="015d51f5-0813-4fb2-b835-39ea5f3f0251"/>
+    <PID name="test_AttackTrees4" mc="Standard.Project" uid="940ba7b7-1616-463c-bb88-d6825e41e852"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[test_attacktrees4]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Tree" mc="Standard.Class" uid="91d8589a-45c5-40f1-9e67-8ff60e7ee12e"/>
+        <COMPID name="Tree1" mc="Standard.Class" uid="a4f437c6-0d3d-4b69-b2af-447ba339b9fd"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
