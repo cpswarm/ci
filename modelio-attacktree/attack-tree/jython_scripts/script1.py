@@ -34,7 +34,7 @@ def main():
 	attackTreePeerModule = Modelio.getInstance().getModuleService().getPeerModule("AttackTreeDesigner")
 
 
-	attackTreePeerModule.importModel(modelPackage, "./test_attacktrees4")
+	attackTreePeerModule.importModel(modelPackage, "./testsuite_XML_trees/test_attacktrees4")
 
 	t = session.createTransaction("transaction 1")
 	modelPackage.getOwnedElement().get(0).setName("hihi3")
@@ -43,7 +43,7 @@ def main():
 
 	assert modelPackage.getOwnedElement().get(0).getName() == "hihi3", "Error"
 
-	attackTreePeerModule.exportModel(modelPackage, "./generated")
+	attackTreePeerModule.exportModel(modelPackage, "./generated_trees")
 
 
 
