@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<attackTree>
+    <treeDiagram name="Tree Diagram"/>
+    <attack name="haha2">
+        <tag name="Severity">MEDIUM</tag>
+        <tag name="Probability">MEDIUM</tag>
+        <tag name="Security related">false</tag>
+        <tag name="Safety related">false</tag>
+        <tag name="Out of scope">false</tag>
+        <operator type="OR">
+            <attack name="Attack1">
+                <tag name="Severity">MEDIUM</tag>
+                <tag name="Probability">MEDIUM</tag>
+                <tag name="Security related">false</tag>
+                <tag name="Safety related">false</tag>
+                <tag name="Out of scope">false</tag>
+            </attack>
+            <attack name="Attack">
+                <tag name="Severity">MEDIUM</tag>
+                <tag name="Probability">MEDIUM</tag>
+                <tag name="Security related">false</tag>
+                <tag name="Safety related">false</tag>
+                <tag name="Out of scope">false</tag>
+            </attack>
+            <treeReference ref="Tree1.xml"/>
+        </operator>
+    </attack>
+</attackTree>
