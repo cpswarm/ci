@@ -11,7 +11,7 @@ def main():
 	gproject =  GProject.getProject(root)
 
 	# Deploy Module (JMDAC File)
-	module_jmdac_path = "/attack-tree/module_jmdac_archives"
+	module_jmdac_path = "/module_jmdac_archives"
 	moduleArchivePattern = os.path.join(module_jmdac_path, "AttackTreeDesigner_*.jmdac")
 	moduleArchives = glob.glob(moduleArchivePattern)
 	moduleArchives.sort(reverse=True)
