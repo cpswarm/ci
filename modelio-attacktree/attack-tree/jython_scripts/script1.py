@@ -44,7 +44,7 @@ def main():
 
 	#assert modelPackage.getOwnedElement().get(0).getName() == "hihi3", "Error"
 
-	attackTreePeerModule.exportModel(modelPackage, "/attack-tree/generated_trees")
+	attackTreePeerModule.exportModel(modelPackage, "/attack-tree/generated_trees/test_0_04")
 
 
 
