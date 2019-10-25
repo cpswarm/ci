@@ -14,6 +14,7 @@ def main():
 	module_jmdac_path = "./module_jmdac_archives"
 	moduleArchivePattern = os.path.join(module_jmdac_path, "AttackTreeDesigner_*.jmdac")
 	moduleArchives = glob.glob(moduleArchivePattern)
+	moduleArchives.sort(reverse=True)
 	Modelio.getInstance().getModuleService().installModule(gproject, Paths.get(moduleArchives[0]))
 	
 	# test if module deployed correctly
@@ -41,7 +42,7 @@ def main():
 
 	t.commit()
 
-	assert modelPackage.getOwnedElement().get(0).getName() == "hihi3", "Error"
+	assert modelPackage.getOwnedElement().get(0).getName() == "hihi2", "Error"
 
 	attackTreePeerModule.exportModel(modelPackage, "./generated_trees")
 
