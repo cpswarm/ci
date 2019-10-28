@@ -35,11 +35,11 @@ def main():
 	t = session.createTransaction("transaction 1")
 	model = session.getModel()
 
-	newPackage = model.createPackage("NewPack", modelPackage)
+	newPackage = model.createPackage("Tree1", modelPackage)
 
 	t.commit()
 	attackTreePeerModule.importModel(newPackage, "/attack-tree/testsuite_XML_trees/test_0_02/Tree1.xml")
-	attackTreePeerModule.exportModel(newPackage, "/attack-tree/generated_trees/test_0_02")
+	attackTreePeerModule.exportModel(newPackage.getOwnedElement().get(0), "/attack-tree/generated_trees/test_0_02")
 
 
 
