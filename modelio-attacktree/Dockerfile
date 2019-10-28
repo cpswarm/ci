@@ -14,4 +14,5 @@ RUN apt update && \
     apt install -yq /attack-tree/${MODELIO_PKG_NAME}.deb
     
 ## The following command would create a virtual display with Xvfb and then generate files according to the project setting
-CMD Xvfb :1 -screen 0 1024x768x16 & DISPLAY=:1.0 modelio-open-source3.8 -consoleLog -workspace /attack-tree/workspace/ -project test_AttackTrees1 -batch /attack-tree/jython_scripts/script1.py 
+#CMD Xvfb :1 -screen 0 1024x768x16 & DISPLAY=:1.0 modelio-open-source3.8 -consoleLog -workspace /attack-tree/workspace/ -project test_AttackTrees1 -batch /attack-tree/jython_scripts/script1.py 
+CMD /attack-tree/launch-test-scripts.sh
