@@ -16,6 +16,7 @@ def main():
 	moduleArchives = glob.glob(moduleArchivePattern)
 	assert len(moduleArchives) > 0, "No jmdac archive has been found !"
 	moduleArchives.sort(reverse=True)
+	print("deploying ", Paths.get(moduleArchives[0]))
 	Modelio.getInstance().getModuleService().installModule(gproject, Paths.get(moduleArchives[0]))
 	
 	# test if module deployed correctly
@@ -35,7 +36,7 @@ def main():
 	t = session.createTransaction("transaction 1")
 	model = session.getModel()
 
-	newPackage = model.createPackage("Tree1", modelPackage)
+	newPackage = model.createPackage("Package1", modelPackage)
 
 	t.commit()
 	attackTreePeerModule.importModel(newPackage, "/attack-tree/testsuite_XML_trees/test_0_02/Tree1.xml")

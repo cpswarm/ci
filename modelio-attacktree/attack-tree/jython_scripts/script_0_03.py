@@ -18,7 +18,7 @@ def main():
 	moduleArchives.sort(reverse=True)
 	print("deploying ", Paths.get(moduleArchives[0]))
 	Modelio.getInstance().getModuleService().installModule(gproject, Paths.get(moduleArchives[0]))
-
+	
 	# test if module deployed correctly
 	attackTreeDesignerModule =findModule("AttackTreeDesigner")
 	if attackTreeDesignerModule is None :
@@ -26,28 +26,35 @@ def main():
 		return 1
 	else:
 		print("Module AttackTreeDesigner found")
-
 	
 	modelPackage = root.getModel().get(0)
-
-
-
-
 
 	attackTreePeerModule = Modelio.getInstance().getModuleService().getPeerModule("AttackTreeDesigner")
 
 
-	attackTreePeerModule.importModel(modelPackage, "/attack-tree/testsuite_XML_trees/test_0_01/")
+	model = session.getModel()
 
 	t = session.createTransaction("transaction 1")
-	#modelPackage.getOwnedElement().get(0).setName("hihi3")
+	modelPackage.setName("Model1")
+	p1 = model.createPackage("p1", modelPackage)
+	p2 = model.createPackage("p2", modelPackage)
+	p3 = model.createPackage("p3", modelPackage)
+
+	p1p1 = model.createPackage("p1_p1", p1)
+	p1p2 = model.createPackage("p1_p2", p1)
+
+	p2p1 = model.createPackage("p2_p1", p2)
+
 
 	t.commit()
 
-	#assert modelPackage.getOwnedElement().get(0).getName() == "hihi3", "Error"
+	attackTreePeerModule.createNewTree(p1p1)
+	attackTreePeerModule.createNewTree(p1p2)
+	attackTreePeerModule.createNewTree(p2)
+	attackTreePeerModule.createNewTree(p2p1)
+	attackTreePeerModule.createNewTree(p3)
 
-	#attackTreePeerModule.exportModel(modelPackage, "/attack-tree/generated_trees/test_0_01/")
-	attackTreePeerModule.exportModel(modelPackage.getOwnedElement().get(0), "/attack-tree/generated_trees/")
+	attackTreePeerModule.exportModel(modelPackage, "/attack-tree/generated_trees/test_0_03")
 
 
 
