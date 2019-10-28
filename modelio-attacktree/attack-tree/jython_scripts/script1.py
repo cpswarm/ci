@@ -14,6 +14,7 @@ def main():
 	module_jmdac_path = "/module_jmdac_archives"
 	moduleArchivePattern = os.path.join(module_jmdac_path, "AttackTreeDesigner_*.jmdac")
 	moduleArchives = glob.glob(moduleArchivePattern)
+	assert len(moduleArchives) > 0, "No jmdac archive has been found !"
 	moduleArchives.sort(reverse=True)
 	Modelio.getInstance().getModuleService().installModule(gproject, Paths.get(moduleArchives[0]))
 	
@@ -35,7 +36,7 @@ def main():
 	attackTreePeerModule = Modelio.getInstance().getModuleService().getPeerModule("AttackTreeDesigner")
 
 
-	attackTreePeerModule.importModel(modelPackage, "/attack-tree/testsuite_XML_trees/test_attacktrees4")
+	attackTreePeerModule.importModel(modelPackage, "/attack-tree/testsuite_XML_trees/test_0_01/")
 
 	t = session.createTransaction("transaction 1")
 	#modelPackage.getOwnedElement().get(0).setName("hihi3")
@@ -44,7 +45,8 @@ def main():
 
 	#assert modelPackage.getOwnedElement().get(0).getName() == "hihi3", "Error"
 
-	attackTreePeerModule.exportModel(modelPackage, "/attack-tree/generated_trees/test_0_04")
+	#attackTreePeerModule.exportModel(modelPackage, "/attack-tree/generated_trees/test_0_01/")
+	attackTreePeerModule.exportModel(modelPackage.getOwnedElement().get(0), "/attack-tree/generated_trees/")
 
 
 
