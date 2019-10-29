@@ -49,7 +49,7 @@ def main():
 
 	#attackTreePeerModule.exportModel(modelPackage, "/attack-tree/generated_trees/test_0_01/")
 
-	for( currentElement in modelPackage.getOwnedElement()):
+	for currentElement in modelPackage.getOwnedElement():
 		attackTreePeerModule.exportModel(currentElement, "/attack-tree/generated_trees/")
 
 	
