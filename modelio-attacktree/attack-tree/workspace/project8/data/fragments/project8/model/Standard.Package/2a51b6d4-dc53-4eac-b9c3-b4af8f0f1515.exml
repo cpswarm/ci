@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="p1_p2" version="4">
+  <OBJECT>
+    <ID name="p1_p2" mc="Standard.Package" uid="2a51b6d4-dc53-4eac-b9c3-b4af8f0f1515"/>
+    <PID name="p1" mc="Standard.Package" uid="b8b044b7-8342-4a70-a823-2091a3559a96"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[p1_p2]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="T2" mc="Standard.Class" uid="71a68c08-54a5-4ff4-8cb4-a020e6b570f0"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

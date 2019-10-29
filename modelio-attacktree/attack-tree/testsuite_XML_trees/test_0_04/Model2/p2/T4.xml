@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<attackTree>
+    <treeDiagram name="T4 Diagram"/>
+    <attack name="T4">
+        <tag name="Severity">MEDIUM</tag>
+        <tag name="Probability">MEDIUM</tag>
+        <tag name="Security related">false</tag>
+        <tag name="Safety related">false</tag>
+        <tag name="Out of scope">false</tag>
+        <operator type="AND">
+            <attack name="Attack">
+                <tag name="Severity">MEDIUM</tag>
+                <tag name="Probability">MEDIUM</tag>
+                <tag name="Security related">false</tag>
+                <tag name="Safety related">false</tag>
+                <tag name="Out of scope">false</tag>
+            </attack>
+            <attack name="Attack1">
+                <tag name="Severity">MEDIUM</tag>
+                <tag name="Probability">MEDIUM</tag>
+                <tag name="Security related">false</tag>
+                <tag name="Safety related">false</tag>
+                <tag name="Out of scope">false</tag>
+            </attack>
+            <attack name="Attack2">
+                <tag name="Severity">MEDIUM</tag>
+                <tag name="Probability">MEDIUM</tag>
+                <tag name="Security related">false</tag>
+                <tag name="Safety related">false</tag>
+                <tag name="Out of scope">false</tag>
+            </attack>
+            <attack name="Attack3">
+                <tag name="Severity">MEDIUM</tag>
+                <tag name="Probability">MEDIUM</tag>
+                <tag name="Security related">false</tag>
+                <tag name="Safety related">false</tag>
+                <tag name="Out of scope">false</tag>
+            </attack>
+            <treeReference ref="../p1/p1_p2/T2.xml"/>
+            <treeReference ref="p2_p1/T3.xml"/>
+        </operator>
+    </attack>
+</attackTree>

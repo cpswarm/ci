@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<attackTree>
+    <treeDiagram name="T1 Diagram"/>
+    <attack name="T1">
+        <tag name="Severity">HIGH</tag>
+        <tag name="Probability">LOW</tag>
+        <tag name="Security related">false</tag>
+        <tag name="Safety related">false</tag>
+        <tag name="Out of scope">false</tag>
+        <operator type="AND">
+            <attack name="Attack">
+                <tag name="Severity">MEDIUM</tag>
+                <tag name="Probability">MEDIUM</tag>
+                <tag name="Security related">false</tag>
+                <tag name="Safety related">false</tag>
+                <tag name="Out of scope">false</tag>
+            </attack>
+            <attack name="Attack1">
+                <tag name="Severity">HIGH</tag>
+                <tag name="Probability">MEDIUM</tag>
+                <tag name="Security related">false</tag>
+                <tag name="Safety related">false</tag>
+                <tag name="Out of scope">false</tag>
+                <operator type="OR">
+                    <attack name="Attack">
+                        <tag name="Severity">MEDIUM</tag>
+                        <tag name="Probability">LOW</tag>
+                        <tag name="Security related">false</tag>
+                        <tag name="Safety related">false</tag>
+                        <tag name="Out of scope">false</tag>
+                    </attack>
+                    <attack name="Attack1">
+                        <tag name="Severity">HIGH</tag>
+                        <tag name="Probability">MEDIUM</tag>
+                        <tag name="Security related">false</tag>
+                        <tag name="Safety related">false</tag>
+                        <tag name="Out of scope">false</tag>
+                    </attack>
+                </operator>
+            </attack>
+        </operator>
+    </attack>
+</attackTree>

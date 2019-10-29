@@ -38,20 +38,21 @@ def main():
 
 
 	attackTreePeerModule.importModel(modelPackage, "/attack-tree/testsuite_XML_trees/test_0_01/")
+	attackTreePeerModule.importModel(modelPackage, "/attack-tree/testsuite_XML_trees/test_0_04/")
 
-	t = session.createTransaction("transaction 1")
+	#t = session.createTransaction("transaction 1")
 	#modelPackage.getOwnedElement().get(0).setName("hihi3")
 
-	t.commit()
+	#t.commit()
 
 	#assert modelPackage.getOwnedElement().get(0).getName() == "hihi3", "Error"
 
 	#attackTreePeerModule.exportModel(modelPackage, "/attack-tree/generated_trees/test_0_01/")
-	attackTreePeerModule.exportModel(modelPackage.getOwnedElement().get(0), "/attack-tree/generated_trees/")
 
+	for( currentElement in modelPackage.getOwnedElement()):
+		attackTreePeerModule.exportModel(currentElement, "/attack-tree/generated_trees/")
 
-
-
+	
 #
 # findModule function
 #
