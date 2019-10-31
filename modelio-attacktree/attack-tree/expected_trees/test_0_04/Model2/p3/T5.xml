@@ -7,6 +7,7 @@
         <tag name="Security related">false</tag>
         <tag name="Safety related">false</tag>
         <tag name="Out of scope">false</tag>
+        <tag name="Countered attack">false</tag>
         <operator type="OR">
             <treeReference ref="../p1/p1_p1/T1.xml"/>
             <attack name="Attack8">
@@ -15,6 +16,7 @@
                 <tag name="Security related">false</tag>
                 <tag name="Safety related">false</tag>
                 <tag name="Out of scope">false</tag>
+                <tag name="Countered attack">false</tag>
                 <operator type="OR">
                     <attack name="Attack5">
                         <tag name="Severity">LOW</tag>
@@ -22,6 +24,7 @@
                         <tag name="Security related">false</tag>
                         <tag name="Safety related">false</tag>
                         <tag name="Out of scope">false</tag>
+                        <tag name="Countered attack">false</tag>
                     </attack>
                     <attack name="Attack3">
                         <tag name="Severity">MEDIUM</tag>
@@ -29,6 +32,7 @@
                         <tag name="Security related">false</tag>
                         <tag name="Safety related">false</tag>
                         <tag name="Out of scope">false</tag>
+                        <tag name="Countered attack">false</tag>
                     </attack>
                     <attack name="Attack1">
                         <tag name="Severity">MEDIUM</tag>
@@ -36,6 +40,7 @@
                         <tag name="Security related">false</tag>
                         <tag name="Safety related">false</tag>
                         <tag name="Out of scope">false</tag>
+                        <tag name="Countered attack">true</tag>
                         <counterMeasure content="Counter-Measure"/>
                     </attack>
                 </operator>
@@ -46,6 +51,7 @@
                 <tag name="Security related">false</tag>
                 <tag name="Safety related">false</tag>
                 <tag name="Out of scope">false</tag>
+                <tag name="Countered attack">false</tag>
                 <operator type="OR">
                     <attack name="Attack2">
                         <tag name="Severity">MEDIUM</tag>
@@ -53,6 +59,7 @@
                         <tag name="Security related">false</tag>
                         <tag name="Safety related">false</tag>
                         <tag name="Out of scope">false</tag>
+                        <tag name="Countered attack">false</tag>
                     </attack>
                     <attack name="Attack4">
                         <tag name="Severity">MEDIUM</tag>
@@ -60,6 +67,7 @@
                         <tag name="Security related">false</tag>
                         <tag name="Safety related">false</tag>
                         <tag name="Out of scope">false</tag>
+                        <tag name="Countered attack">false</tag>
                         <operator type="AND">
                             <attack name="Attack">
 <tag name="Severity">LOW</tag>
@@ -67,6 +75,7 @@
 <tag name="Security related">false</tag>
 <tag name="Safety related">false</tag>
 <tag name="Out of scope">false</tag>
+<tag name="Countered attack">false</tag>
                             </attack>
                             <attack name="Attack7">
 <tag name="Severity">MEDIUM</tag>
@@ -74,6 +83,7 @@
 <tag name="Security related">false</tag>
 <tag name="Safety related">false</tag>
 <tag name="Out of scope">false</tag>
+<tag name="Countered attack">false</tag>
                             </attack>
                         </operator>
                     </attack>

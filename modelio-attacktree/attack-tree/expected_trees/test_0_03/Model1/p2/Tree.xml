@@ -7,5 +7,6 @@
         <tag name="Security related">false</tag>
         <tag name="Safety related">false</tag>
         <tag name="Out of scope">false</tag>
+        <tag name="Countered attack">false</tag>
     </attack>
 </attackTree>
