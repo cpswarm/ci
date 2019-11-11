@@ -1,11 +1,12 @@
 FROM electronuserland/builder:wine
 
+ARG VERSION=0.0.0
+
 COPY . /home
 WORKDIR /home
 
 RUN npm install --silent
-RUN npm run --silent build:linux
-RUN npm run --silent build:win
-#RUN npm run --silent build:mac # this only works on macOS
+RUN npm run build:linux -- -c.extraMetadata.version=${VERSION}
+RUN npm run build:win -- -c.extraMetadata.version=${VERSION}
 
 RUN ls -l build
