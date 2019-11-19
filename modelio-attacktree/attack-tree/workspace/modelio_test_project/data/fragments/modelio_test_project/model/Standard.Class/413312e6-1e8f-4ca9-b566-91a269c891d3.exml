@@ -1,0 +1,160 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Tree" version="4">
+  <OBJECT>
+    <ID name="Tree" mc="Standard.Class" uid="413312e6-1e8f-4ca9-b566-91a269c891d3"/>
+    <PID name="t01_02_export_tree" mc="Standard.Package" uid="b3c4b4d9-a5b7-49f5-8561-b65cb401fa9f"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Tree]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="Root" mc="Infrastructure.Stereotype" uid="d05ac5e1-3789-443f-8fb9-d7be2ce89edc"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.TaggedValue" uid="3dcca2b0-6aa5-4a28-a21f-08c8abe2d00b"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.TagParameter" uid="515fb394-f84a-4f99-9b80-0ee5aa8eeb5f"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[MEDIUM]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="Severity" mc="Infrastructure.TagType" uid="d8fb88fd-74a5-49a4-808c-750ab6e76b3f"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.TaggedValue" uid="c93ee20a-771a-4c72-af2f-d61bf36db088"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.TagParameter" uid="2f471da0-0d69-499e-9fbf-c90191742a73"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[MEDIUM]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="Probability" mc="Infrastructure.TagType" uid="035608cc-09d8-450e-a160-8889204ad6de"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.TaggedValue" uid="a4a7d266-8d47-442c-a6af-285fb3204bcf"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.TagParameter" uid="4a063248-c6c4-46fc-ab60-0bac7cd30e4c"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[false]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="Security related" mc="Infrastructure.TagType" uid="923a8a26-c1af-4c8d-b627-c75164e8ba61"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.TaggedValue" uid="995d266f-1888-4b34-9bdf-ac900d5f2fcc"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.TagParameter" uid="f47415d9-c878-4089-a8aa-7b8a4503a9b7"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[false]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="Safety related" mc="Infrastructure.TagType" uid="e6005ad7-e8fe-45bd-ad76-6c2e195de688"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.TaggedValue" uid="2f99b135-33fc-4d3d-b2be-2500bf7e28e2"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.TagParameter" uid="584d21f1-3987-4c12-8545-a9041963f36a"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[false]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="Out of scope" mc="Infrastructure.TagType" uid="6cdb9550-932c-4872-bd5b-47dac059f337"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.TaggedValue" uid="bb1e4f92-5668-4b55-8b7a-d689d0be0326"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.TagParameter" uid="ec69b7a8-0e9c-46ce-a1c9-a666a164e4ac"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[false]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="Countered attack" mc="Infrastructure.TagType" uid="3268b8f4-f4e7-4899-9341-f1e561a69117"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Tree Diagram" mc="Standard.ClassDiagram" uid="3f151bdd-b937-471b-b71d-09e96cf59f21"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

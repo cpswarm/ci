@@ -7,7 +7,7 @@ tree1 = attackTreePeerModule.createNewTree(modelPackage)
 tree2 = attackTreePeerModule.createNewTree(modelPackage)
 
 diagrams = tree1.getDiagramElement()
-diagram = diagrams[0]
+diagram = diagrams.get(0)
 
 and1 = attackTreePeerModule.createANDChild(tree1,diagram)
 attack1 = attackTreePeerModule.createAttack(diagram)
