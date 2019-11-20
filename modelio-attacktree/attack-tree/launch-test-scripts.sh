@@ -20,15 +20,14 @@ done
 for f1 in /attack-tree/test_suite/*; do
     for f2 in $f1/*; do
         for s in $f2/verdict/*; do
-            [ -f "$s" ] || break
-            
-            if [[ $s == *.py ]]; 
+                    
+            if [ -f "$s" ] && [[ $s == *.py ]]; 
             then 
                 echo "------------->running jython script : " $s
                 xvfb-run --auto-servernum --server-num=1 modelio-open-source3.8 -consoleLog -workspace /attack-tree/workspace/ -project modelio_test_project -batch $s
             fi
 
-            if [[ $s == *.sh ]]; 
+            if [ -f "$s" ] && [[ $s == *.sh ]]; 
             then 
                 echo "------------->running bash script : " $s
                 bash $s
