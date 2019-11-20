@@ -13,7 +13,7 @@ def main():
 
 
 	# add your test here in testPackage
-	testPackage = findPackage(modelPackage, "t01_export", "t01_01_export_tree")
+	testPackage = findPackage(modelPackage, "t01_export", "t01_02_export_tree")
 	assert testPackage is not None, "testPackage is None type"
 
 	tree = testPackage.getOwnedElement().get(0)
