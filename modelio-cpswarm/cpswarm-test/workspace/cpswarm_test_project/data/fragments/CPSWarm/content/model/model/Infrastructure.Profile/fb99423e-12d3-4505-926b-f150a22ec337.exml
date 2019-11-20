@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="CPSWarm.concept" version="4">
+  <OBJECT>
+    <ID name="CPSWarm.concept" mc="Infrastructure.Profile" uid="fb99423e-12d3-4505-926b-f150a22ec337"/>
+    <PID name="CPSWarm" mc="Infrastructure.ModuleComponent" uid="b914be5e-e9d5-4c22-84be-9edec27e429c"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[CPSWarm.concept]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedStereotype">
+        <COMPID name="EnvironmentDefinition" mc="Infrastructure.Stereotype" uid="308a413a-7415-46f0-b2f5-3a0abc21a4b4"/>
+        <COMPID name="FitnessFunction" mc="Infrastructure.Stereotype" uid="67792719-f8fd-47e6-b093-2c5244565789"/>
+        <COMPID name="Problem" mc="Infrastructure.Stereotype" uid="5bfe0e67-fb3e-49db-a10e-7b62c4d44aed"/>
+        <COMPID name="Swarm" mc="Infrastructure.Stereotype" uid="b7712590-a4be-4290-b91e-1e8e27d8005c"/>
+        <COMPID name="Swarm_Member" mc="Infrastructure.Stereotype" uid="716ed069-c82d-4d0e-a2c8-c19ca8eeb165"/>
+        <COMPID name="Controller" mc="Infrastructure.Stereotype" uid="ba5073cb-49b9-4e5b-84ff-252f8bc1efe9"/>
+        <COMPID name="Virtual" mc="Infrastructure.Stereotype" uid="bd764e2a-af34-4cf3-a783-cb467d8753e7"/>
+        <COMPID name="Sensor" mc="Infrastructure.Stereotype" uid="0cc49982-e520-401e-91b9-49354b24e208"/>
+        <COMPID name="Actuator" mc="Infrastructure.Stereotype" uid="431b7386-fd22-474a-a1f0-262e6cb763df"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

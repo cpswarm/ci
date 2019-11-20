@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<ram-component manifest-version="2.0.02" name="CPSWarmLibrary" version="3" release="8" clevel="3" modelioVersion="3.8.01" provider="">
+  <description><![CDATA[]]></description>
+  <dependencies></dependencies>
+  <contributors>
+    <contributor name="CPSWarm" version="3.8.02"/>
+    <contributor name="ModelerModule" version="8.7.10"/>
+    <contributor name="SysMLArchitect" version="3.6.02"/>
+  </contributors>
+  <metamodels>
+    <metamodel name="Infrastructure" version="2.1.03"/>
+    <metamodel name="Standard" version="2.3.00"/>
+  </metamodels>
+  <roots>
+    <root metaclass="Standard.Project" name="CPSWarmLibrary" uuid="cfa63668-cbba-43f3-a931-d3d165a44382"/>
+  </roots>
+</ram-component>

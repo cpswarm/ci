@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Behavior" version="4">
+  <OBJECT>
+    <ID name="Behavior" mc="Standard.StateMachine" uid="18c32748-58cb-447d-9df4-f0e2dbb23564"/>
+    <PID name="t01_01_generate_empty_behaviour" mc="Standard.Package" uid="cc458bca-3454-4a93-bd31-b94228a26896"/>
+    <ATTRIBUTES>
+      <ATT name="Kind">Dynamic</ATT>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Behavior]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Top">
+        <OBJECT>
+          <ID name="" mc="Standard.Region" uid="51cd844f-7fd2-4b58-8c34-dba214083e10"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Behavior" mc="Standard.StateMachineDiagram" uid="217b95df-f5fb-4958-a754-9b0c369de81b"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

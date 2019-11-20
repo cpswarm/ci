@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="t01_01_generate_empty_behaviour" version="4">
+  <OBJECT>
+    <ID name="t01_01_generate_empty_behaviour" mc="Standard.Package" uid="cc458bca-3454-4a93-bd31-b94228a26896"/>
+    <PID name="t01_SCXML_Generation" mc="Standard.Package" uid="372e3691-0f59-44d3-9c6f-30ee6ab87163"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[t01_01_generate_empty_behaviour]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Behavior" mc="Standard.StateMachine" uid="18c32748-58cb-447d-9df4-f0e2dbb23564"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

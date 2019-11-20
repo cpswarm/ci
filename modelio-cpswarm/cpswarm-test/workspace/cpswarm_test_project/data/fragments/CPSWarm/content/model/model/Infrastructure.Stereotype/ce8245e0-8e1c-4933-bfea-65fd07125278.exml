@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Environment_Defintion" version="4">
+  <OBJECT>
+    <ID name="Environment_Defintion" mc="Infrastructure.Stereotype" uid="ce8245e0-8e1c-4933-bfea-65fd07125278"/>
+    <PID name="CPSWarm.diagram" mc="Infrastructure.Profile" uid="8e8834de-b0af-4b68-8350-7eca4cf46118"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">true</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="LabelKey"><![CDATA[%stereotype.Environment_Defintion.label]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Standard.ClassDiagram]]></ATT>
+      <ATT name="Name"><![CDATA[Environment_Defintion]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>
