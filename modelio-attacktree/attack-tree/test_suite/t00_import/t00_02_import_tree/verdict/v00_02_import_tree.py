@@ -18,7 +18,7 @@ def main():
 	assert testPackage is not None, "testPackage is None type"
 
 	tree1 = testPackage.getOwnedElement().get(0)
-	if(package.getName() != "Tree1"):
+	if(tree1.getName() != "Tree1"):
 		outputError("/errors_output/t00_02_import_tree.err", "Expected to find tree with the name 'Tree1', instead we found the name " + tree1.getName() + "\n")
 
 #
