@@ -22,7 +22,7 @@ def main():
 		outputError("/errors_output/t02_01_create_diagram.err", "Expected to find tree with the name 'Tree', instead we found the name " + tree.getName() + "\n")
 
 	diagram = tree.getOwnedElement().get(0)
-		if(diagram.getName() != "Tree Diagram"):
+	if(diagram.getName() != "Tree Diagram"):
 		outputError("/errors_output/t02_01_create_diagram.err", "Expected to find diagram with the name 'Tree', instead we found the name " + diagram.getName() + "\n")
 
 #
