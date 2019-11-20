@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="t02_create_diagram" version="4">
+  <OBJECT>
+    <ID name="t02_create_diagram" mc="Standard.Package" uid="7f3d53f7-e8a0-4a0b-bf36-2d0bb5021289"/>
+    <PID name="modelio_test_project" mc="Standard.Package" uid="dd83ac69-4828-49c5-b488-af4c94538186"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[t02_create_diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="t02_01_create_diagram" mc="Standard.Package" uid="b6d83496-0f52-4e81-a7c6-c08cd6acd70b"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

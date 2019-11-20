@@ -16,6 +16,7 @@
       <COMP relation="OwnedElement">
         <COMPID name="t00_import" mc="Standard.Package" uid="02ae71ed-b2bb-4594-94aa-5f715477fb1a"/>
         <COMPID name="t01_export" mc="Standard.Package" uid="1a4fd6bb-75bd-4f31-89be-d9f28dddbab2"/>
+        <COMPID name="t02_create_diagram" mc="Standard.Package" uid="7f3d53f7-e8a0-4a0b-bf36-2d0bb5021289"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>
