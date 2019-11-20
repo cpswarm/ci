@@ -19,7 +19,7 @@ done
 # Verdicts
 for f1 in /attack-tree/test_suite/*; do
     for f2 in $f1/*; do
-        for s in $f2/verdict/*.py; do
+        for s in $f2/verdict/*; do
             [ -f "$s" ] || break
             
             if [[ $s == *.py ]]; 
@@ -31,7 +31,7 @@ for f1 in /attack-tree/test_suite/*; do
             if [[ $s == *.sh ]]; 
             then 
                 echo "------------->running bash script : " $s
-                $s
+                bash $s
             fi
         done
     done
