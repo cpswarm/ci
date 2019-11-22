@@ -21,7 +21,7 @@ def main():
 
 
 	tree = testPackage.getOwnedElement().get(0)
-	assert tree.getName == "Tree", "tree not found"
+	assert tree.getName() == "Tree", "Cannot find a trrr with the name 'Tree', instead we found " + tree.getName()
 
 	diagrams = tree.getDiagramElement()
 	diagram = diagrams.get(0)
