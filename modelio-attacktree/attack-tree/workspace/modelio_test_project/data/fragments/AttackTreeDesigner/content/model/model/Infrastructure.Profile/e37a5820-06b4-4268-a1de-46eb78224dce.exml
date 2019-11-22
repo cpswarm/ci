@@ -19,6 +19,7 @@
         <COMPID name="Node" mc="Infrastructure.Stereotype" uid="9c3f6aa5-547c-4558-87db-d64dca132d75"/>
         <COMPID name="TreeReference" mc="Infrastructure.Stereotype" uid="c85b8741-354e-43f5-be03-a53c72961da3"/>
         <COMPID name="TreeReferenceAttribute" mc="Infrastructure.Stereotype" uid="4f155d1d-2a98-43b0-be60-57d26b75b56f"/>
+        <COMPID name="ThreatAnalysis" mc="Infrastructure.Stereotype" uid="53408021-45e2-4fc6-84c4-8f567a6b7a99"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>
