@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="t07_01_Create_CounterMeasure_on_Root" version="4">
+  <OBJECT>
+    <ID name="t07_01_Create_CounterMeasure_on_Root" mc="Standard.Package" uid="552cfb0b-ec12-4bf7-95ac-dbefa6096301"/>
+    <PID name="t07_Counter_Measure" mc="Standard.Package" uid="c7626675-f67e-4ed3-9672-95ad478ddd76"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[t07_01_Create_CounterMeasure_on_Root]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Tree" mc="Standard.Class" uid="b031969b-0c74-452d-b8cd-e0b57fc29346"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

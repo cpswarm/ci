@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="t05_OR" version="4">
+  <OBJECT>
+    <ID name="t05_OR" mc="Standard.Package" uid="0aab60b3-04ca-4740-a69b-1673eb1bbc85"/>
+    <PID name="modelio_test_project" mc="Standard.Package" uid="dd83ac69-4828-49c5-b488-af4c94538186"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[t05_OR]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="t05_05_Delete_OR" mc="Standard.Package" uid="1acb774b-b109-444d-8c69-7e47244f32c2"/>
+        <COMPID name="t05_01_Create_OR_with_no_children" mc="Standard.Package" uid="824b8f59-9fa5-4d0f-ae17-57eb49883f20"/>
+        <COMPID name="t05_03_Create_OR_with_two_children" mc="Standard.Package" uid="d8439b68-7c9e-456b-b73b-80aad17e5cc7"/>
+        <COMPID name="t05_04_Create_OR_with_three_children" mc="Standard.Package" uid="09af95d7-f8dc-427d-94b4-9ab1c296a91a"/>
+        <COMPID name="t05_02_Create_OR_with_one_child" mc="Standard.Package" uid="f8780ff1-37e0-41d8-838b-1634e2db6158"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

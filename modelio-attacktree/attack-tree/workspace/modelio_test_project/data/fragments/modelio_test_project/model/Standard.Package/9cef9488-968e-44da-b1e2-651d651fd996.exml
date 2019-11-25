@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="t03_02_delete_attack" version="4">
+  <OBJECT>
+    <ID name="t03_02_delete_attack" mc="Standard.Package" uid="9cef9488-968e-44da-b1e2-651d651fd996"/>
+    <PID name="t03_create_attack" mc="Standard.Package" uid="4149b488-0e81-42cc-bc2b-f91fb244d83c"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[t03_02_delete_attack]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Tree" mc="Standard.Class" uid="bff5d715-e10a-4186-ac86-7c0b1c7becdd"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="t13_Threat_Analysis_Dependency" version="4">
+  <OBJECT>
+    <ID name="t13_Threat_Analysis_Dependency" mc="Standard.Package" uid="fc462ce0-e7df-4522-8f54-d161c91f735b"/>
+    <PID name="modelio_test_project" mc="Standard.Package" uid="dd83ac69-4828-49c5-b488-af4c94538186"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[t13_Threat_Analysis_Dependency]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

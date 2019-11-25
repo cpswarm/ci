@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="t09_Probability" version="4">
+  <OBJECT>
+    <ID name="t09_Probability" mc="Standard.Package" uid="faa00140-938a-49b3-a94f-f76ad44c0668"/>
+    <PID name="modelio_test_project" mc="Standard.Package" uid="dd83ac69-4828-49c5-b488-af4c94538186"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[t09_Probability]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

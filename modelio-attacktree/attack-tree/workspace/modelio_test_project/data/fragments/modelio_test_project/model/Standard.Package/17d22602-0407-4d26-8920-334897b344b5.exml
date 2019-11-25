@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="t06_05_Create_Dep_Root_AND_OR" version="4">
+  <OBJECT>
+    <ID name="t06_05_Create_Dep_Root_AND_OR" mc="Standard.Package" uid="17d22602-0407-4d26-8920-334897b344b5"/>
+    <PID name="t06_Connection_Dependency" mc="Standard.Package" uid="c131b85a-3cf6-445f-ad0b-54fe7ab92d6a"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[t06_05_Create_Dep_Root_AND_OR]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Tree" mc="Standard.Class" uid="fe359d38-0483-4cf5-9226-6917a6c3be43"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

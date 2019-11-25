@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="AND" version="4">
+  <OBJECT>
+    <ID name="AND" mc="Standard.Class" uid="95d775fa-bb60-475d-aacc-14594c9e9a5b"/>
+    <PID name="Tree" mc="Standard.Class" uid="5a8bec2a-5005-433d-973c-e321a81b84b6"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[AND]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Attack" mc="Standard.Class" uid="76e1fb60-cd82-466a-ac33-947bd3482a51"/>
+        <COMPID name="Attack1" mc="Standard.Class" uid="fc125ba1-78f6-40dc-a1c9-be4f0c8b988f"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="AND" mc="Infrastructure.Stereotype" uid="25f299d0-3f80-4347-964f-4a317676e21e"/>
+      </LINK>
+      <COMP relation="DependsOnDependency">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Dependency" uid="95c9bb97-7d6d-4f06-a853-091eda65d2d4"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="Attack" mc="Standard.Class" uid="76e1fb60-cd82-466a-ac33-947bd3482a51"/>
+            </LINK>
+            <LINK relation="Extension">
+              <FOREIGNID name="Connection" mc="Infrastructure.Stereotype" uid="040af89d-22db-4117-acb5-e9ae7f333c60"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Dependency" uid="91d52870-6716-4a67-91e8-d716910430b1"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="Attack1" mc="Standard.Class" uid="fc125ba1-78f6-40dc-a1c9-be4f0c8b988f"/>
+            </LINK>
+            <LINK relation="Extension">
+              <FOREIGNID name="Connection" mc="Infrastructure.Stereotype" uid="040af89d-22db-4117-acb5-e9ae7f333c60"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

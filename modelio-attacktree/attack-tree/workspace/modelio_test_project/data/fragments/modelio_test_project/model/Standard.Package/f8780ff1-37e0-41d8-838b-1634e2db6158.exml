@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="t05_05_Delete_OR" version="4">
+  <OBJECT>
+    <ID name="t05_05_Delete_OR" mc="Standard.Package" uid="f8780ff1-37e0-41d8-838b-1634e2db6158"/>
+    <PID name="t05_OR" mc="Standard.Package" uid="0aab60b3-04ca-4740-a69b-1673eb1bbc85"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[t05_05_Delete_OR]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Tree" mc="Standard.Class" uid="42c2ed3d-4560-4d81-b2a5-4169b96b6d0c"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

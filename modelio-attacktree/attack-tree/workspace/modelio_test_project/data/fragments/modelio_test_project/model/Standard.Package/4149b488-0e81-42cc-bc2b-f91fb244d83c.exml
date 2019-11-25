@@ -15,6 +15,7 @@
     <DEPENDENCIES>
       <COMP relation="OwnedElement">
         <COMPID name="t03_01_create_one_attack" mc="Standard.Package" uid="7adb4804-0089-4c6c-a788-f141279d3005"/>
+        <COMPID name="t03_02_delete_attack" mc="Standard.Package" uid="9cef9488-968e-44da-b1e2-651d651fd996"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

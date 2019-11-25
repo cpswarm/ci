@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="t11_Update_Operator" version="4">
+  <OBJECT>
+    <ID name="t11_Update_Operator" mc="Standard.Package" uid="167294ab-6ef1-40d9-90a0-9bf816c9eda9"/>
+    <PID name="modelio_test_project" mc="Standard.Package" uid="dd83ac69-4828-49c5-b488-af4c94538186"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[t11_Update_Operator]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

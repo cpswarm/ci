@@ -18,6 +18,16 @@
         <COMPID name="t01_export" mc="Standard.Package" uid="1a4fd6bb-75bd-4f31-89be-d9f28dddbab2"/>
         <COMPID name="t02_create_diagram" mc="Standard.Package" uid="7f3d53f7-e8a0-4a0b-bf36-2d0bb5021289"/>
         <COMPID name="t03_create_attack" mc="Standard.Package" uid="4149b488-0e81-42cc-bc2b-f91fb244d83c"/>
+        <COMPID name="t04_AND" mc="Standard.Package" uid="e6bac8e9-cf0f-49a4-ac69-08682b751e2d"/>
+        <COMPID name="t05_OR" mc="Standard.Package" uid="0aab60b3-04ca-4740-a69b-1673eb1bbc85"/>
+        <COMPID name="t06_Connection_Dependency" mc="Standard.Package" uid="c131b85a-3cf6-445f-ad0b-54fe7ab92d6a"/>
+        <COMPID name="t07_Counter_Measure" mc="Standard.Package" uid="c7626675-f67e-4ed3-9672-95ad478ddd76"/>
+        <COMPID name="t08_Update_Severity" mc="Standard.Package" uid="cb859bb4-e41c-41e0-8593-7dc31a723e6d"/>
+        <COMPID name="t09_Probability" mc="Standard.Package" uid="faa00140-938a-49b3-a94f-f76ad44c0668"/>
+        <COMPID name="t10_Update_Tags" mc="Standard.Package" uid="f5900b41-4147-454e-8351-c830805ea448"/>
+        <COMPID name="t11_Update_Operator" mc="Standard.Package" uid="167294ab-6ef1-40d9-90a0-9bf816c9eda9"/>
+        <COMPID name="t12_Update_Reference" mc="Standard.Package" uid="d6e762b2-8838-4e26-ba01-ba8e1f87abe9"/>
+        <COMPID name="t13_Threat_Analysis_Dependency" mc="Standard.Package" uid="fc462ce0-e7df-4522-8f54-d161c91f735b"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

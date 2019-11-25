@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="t04_02_Create_AND_with_one_child" version="4">
+  <OBJECT>
+    <ID name="t04_02_Create_AND_with_one_child" mc="Standard.Package" uid="d6aeb260-d951-4888-b5ea-f0092a66e449"/>
+    <PID name="t04_AND" mc="Standard.Package" uid="e6bac8e9-cf0f-49a4-ac69-08682b751e2d"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[t04_02_Create_AND_with_one_child]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Tree" mc="Standard.Class" uid="2a2c9704-749d-441a-bd46-013401cedc00"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

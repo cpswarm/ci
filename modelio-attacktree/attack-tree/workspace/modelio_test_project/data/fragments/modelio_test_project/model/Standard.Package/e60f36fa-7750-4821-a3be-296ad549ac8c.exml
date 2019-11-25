@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="t07_07_Add_CM_Ref_Root_with_no_children" version="4">
+  <OBJECT>
+    <ID name="t07_07_Add_CM_Ref_Root_with_no_children" mc="Standard.Package" uid="e60f36fa-7750-4821-a3be-296ad549ac8c"/>
+    <PID name="t07_Counter_Measure" mc="Standard.Package" uid="c7626675-f67e-4ed3-9672-95ad478ddd76"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[t07_07_Add_CM_Ref_Root_with_no_children]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Tree" mc="Standard.Class" uid="ff33f7ee-aaa5-43b7-adcf-0b91e6aff3d5"/>
+        <COMPID name="Tree1" mc="Standard.Class" uid="12bf9eb3-83bb-4f1b-a7b7-c16139e35a3f"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

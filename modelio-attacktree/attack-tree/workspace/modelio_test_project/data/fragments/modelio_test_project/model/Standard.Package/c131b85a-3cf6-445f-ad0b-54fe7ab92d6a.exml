@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="t06_Connection_Dependency" version="4">
+  <OBJECT>
+    <ID name="t06_Connection_Dependency" mc="Standard.Package" uid="c131b85a-3cf6-445f-ad0b-54fe7ab92d6a"/>
+    <PID name="modelio_test_project" mc="Standard.Package" uid="dd83ac69-4828-49c5-b488-af4c94538186"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[t06_Connection_Dependency]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="t06_01_Create_Dep_Root_AND" mc="Standard.Package" uid="e649f677-719d-4f87-b20d-0029934f8ed4"/>
+        <COMPID name="t06_02_Delete_Dep_Root_AND" mc="Standard.Package" uid="7b9f9e55-95ae-4aff-95df-85484b96a1e8"/>
+        <COMPID name="t06_03_Create_Dep_Root_AND_Attack" mc="Standard.Package" uid="e88f0eb0-4a00-4a5b-9d9a-664896cd4cfa"/>
+        <COMPID name="t06_04_Delete_Dep_Root_AND_Attack" mc="Standard.Package" uid="755274ce-238e-47df-bbed-774893cf0abf"/>
+        <COMPID name="t06_05_Create_Dep_Root_AND_OR" mc="Standard.Package" uid="17d22602-0407-4d26-8920-334897b344b5"/>
+        <COMPID name="t06_06_Delete_Dep_Root_AND_OR" mc="Standard.Package" uid="372778df-9441-4c64-9ae8-513643a2e26b"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

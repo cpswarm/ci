@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="t07_23_Update_Undefined_Ref_to_countered_AND_Child" version="4">
+  <OBJECT>
+    <ID name="t07_23_Update_Undefined_Ref_to_countered_AND_Child" mc="Standard.Package" uid="063a7277-11be-4328-b08d-845e73953841"/>
+    <PID name="t07_Counter_Measure" mc="Standard.Package" uid="c7626675-f67e-4ed3-9672-95ad478ddd76"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[t07_23_Update_Undefined_Ref_to_countered_AND_Child]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Tree" mc="Standard.Class" uid="6c7d6b4d-b978-41a6-9b1b-2ca751bd5f17"/>
+        <COMPID name="Tree1" mc="Standard.Class" uid="ce739de4-6040-4e70-a7f8-a4559dcea7de"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

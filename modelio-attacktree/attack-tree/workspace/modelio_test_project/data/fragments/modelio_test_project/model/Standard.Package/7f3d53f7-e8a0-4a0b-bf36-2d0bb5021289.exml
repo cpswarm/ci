@@ -15,6 +15,7 @@
     <DEPENDENCIES>
       <COMP relation="OwnedElement">
         <COMPID name="t02_01_create_diagram" mc="Standard.Package" uid="b6d83496-0f52-4e81-a7c6-c08cd6acd70b"/>
+        <COMPID name="t02_02_delete_tree" mc="Standard.Package" uid="28204899-9dab-4225-b627-2e360ec59e63"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

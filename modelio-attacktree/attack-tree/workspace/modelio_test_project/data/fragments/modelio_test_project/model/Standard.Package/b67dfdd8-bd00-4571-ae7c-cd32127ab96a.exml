@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="t07_14_Update_Countered_Ref_Root_with_no_children_to_other_countered_tree" version="4">
+  <OBJECT>
+    <ID name="t07_14_Update_Countered_Ref_Root_with_no_children_to_other_countered_tree" mc="Standard.Package" uid="b67dfdd8-bd00-4571-ae7c-cd32127ab96a"/>
+    <PID name="t07_Counter_Measure" mc="Standard.Package" uid="c7626675-f67e-4ed3-9672-95ad478ddd76"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[t07_14_Update_Countered_Ref_Root_with_no_children_to_other_countered_tree]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Tree1" mc="Standard.Class" uid="374db9f3-af29-4970-8d46-f5a5341b0355"/>
+        <COMPID name="Tree" mc="Standard.Class" uid="83f06df5-5955-422e-8aa0-3d9445395df4"/>
+        <COMPID name="Tree2" mc="Standard.Class" uid="000b4fe2-a91e-4d38-93d6-2027c5b26992"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
