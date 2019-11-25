@@ -1,7 +1,4 @@
-import os
-import glob
-from java.nio.file import Paths
-from org.modelio.gproject.gproject import GProject
+
 
 #
 # MAIN
@@ -10,15 +7,31 @@ def main():
 	root = session.getModel().getModelRoots().get(1)
 
 	#
+	attackTreePeerModule = Modelio.getInstance().getModuleService().getPeerModule("AttackTreeDesigner")
+	assert attackTreePeerModule is not None, "attackTreePeerModule is None type"
 	modelPackage = root.getModel().get(0)
 
 
 	# add your test here in testPackage
-	testPackage = findPackage(modelPackage, "t02_create_diagram", "t02_02_delete_tree")
+	testPackage = findPackage(modelPackage, "t04_AND", "t04_01_Create_AND_with_no_children")
 	assert testPackage is not None, "testPackage is None type"
 
-	if not testPackage.getOwnedElement().isEmpty():
-		outputError("/errors_output/t02_02_delete_tree.err", "Expected to find empty Package after deleting 'Tree' \n")
+
+	tree = testPackage.getOwnedElement().get(0)
+	assert tree.getName() == "Tree", "Cannot find a tree with the name 'Tree', instead we found " + tree.getName()
+
+	diagrams = tree.getDiagramElement()
+	diagram = diagrams.get(0)
+
+	t = session.createTransaction("create and")
+
+	andNode = attackTreePeerModule.createANDChild(tree,diagram)
+
+	t.commit()
+
+	coreSession.save(None)
+
+
 
 #
 # findPackage function
