@@ -16,3 +16,6 @@ RUN cmake .. -DSWARMIO_TARGET_ARCHITECTURE=arm64 -DSWARMIO_BUILD_MODE=PACKAGE -D
 RUN cmake --build .
 RUN cmake .. -DSWARMIO_TARGET_ARCHITECTURE=armhf -DSWARMIO_BUILD_MODE=PACKAGE -DSWARMIO_MULTISTRAP_CONFIGURATION=bionic-ros -DSWARMIO_BUILD_ROS_NODE=ON
 RUN cmake --build .
+
+# Run test script
+RUN ./libswarmio-amd64/src/libswarmio-build/logparser.py
