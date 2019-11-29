@@ -20,11 +20,6 @@ def main():
 	tree = testPackage.getOwnedElement().get(0)
 	assert tree.getName() == "Tree", "Cannot find a tree with the name 'Tree', instead we found " + tree.getName()
 
-	orNode = tree.getOwnedElement().get(0)
-	for node in orNode :
-		if not node.getOwnedElement().isEmpty :
-			andNode = node.getOwnedElement().get(0)
-			andNode.delete()
 
 
 	t = session.createTransaction("create and")
