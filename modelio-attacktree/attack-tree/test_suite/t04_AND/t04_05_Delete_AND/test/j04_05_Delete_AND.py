@@ -27,7 +27,7 @@ def main():
 
 	orNode = tree.getOwnedElement().get(0)
 	for node in orNode.getOwnedElement() :
-		if not node.getOwnedElement().isEmpty :
+		if not node.getOwnedElement().isEmpty() :
 			andNode = node.getOwnedElement().get(0)
 			andNode.delete()
 
