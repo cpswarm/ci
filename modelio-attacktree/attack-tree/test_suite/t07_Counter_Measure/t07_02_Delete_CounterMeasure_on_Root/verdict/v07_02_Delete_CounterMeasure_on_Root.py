@@ -15,10 +15,9 @@ def main():
 	modelPackage = root.getModel().get(0)
 
 
-	# add your test here in testPackage
-	testPackage = findPackage(modelPackage, "t06_Connection_Dependency", "t06_03_Create_Dep_Root_AND_Attack")
+	# testPackage
+	testPackage = findPackage(modelPackage, "t07_Counter_Measure", "t07_02_Delete_CounterMeasure_on_Root")
 	assert testPackage is not None, "testPackage is None type"
-
 
 	tree = testPackage.getOwnedElement().get(0)
 	assert tree.getName() == "Tree", "Cannot find a trrr with the name 'Tree', instead we found " + tree.getName()
@@ -27,14 +26,23 @@ def main():
 	diagram = diagrams.get(0)
 
 
-	dependency = tree.getDependsOnDependency().get(0)
-	andNode = dependency.getDependsOn()
 
-	if andNode.getDependsOnDependency().size() != 2 :
-		outputError("/errors_output/t06_03_Create_Dep_Root_AND_Attack.err", "Expected to find AND node with 2 outggoing dependencies, instead found : " + str(andNode.getDependsOnDependency().size()) +  " \n")
+	# Insert your test here
+	
+	# Verify if tree has notes
+	if not tree.getDescriptor().isEmpty():
+		outputError("/errors_output/t07_02_Delete_CounterMeasure_on_Root.err", "Expected to tree with no notes \n")
 
-	if tree.getOwnedElement().size() != 1 :
-		outputError("/errors_output/t06_03_Create_Dep_Root_AND_Attack.err", "Expected to find Tree node with one node child, instead found : " + str(tree.getOwnedElement.size()) +  " \n")
+	# Verify Countered Tag value
+	if tree.getTag("AttackTreeDesigner", "Attack", "Countered attack").getActual().get(0).getValue() != "false" :
+		outputError("/errors_output/t07_02_Delete_CounterMeasure_on_Root.err", "Expected to find tree with the Countered attack having the value 'false', instead found  " + tree.getTag("AttackTreeDesigner", "Attack", "Countered attack").getActual().get(0).getValue() + "\n")
+
+	# Color of Tree
+	diagramService = Modelio.getInstance().getDiagramService()
+	diagramHandle = diagramService.getDiagramHandle(diagram)
+	treeGraphicNode = diagramHandle.getDiagramGraphics(tree).get(0)
+	if treeGraphicNode.getFillColor() != "250,240,210" :
+		outputError("/errors_output/t07_02_Delete_CounterMeasure_on_Root.err", "Expected tree to have color 250,240,210 ! Instead we found the color " + treeGraphicNode.getFillColor() + "\n")
 
 
 #
