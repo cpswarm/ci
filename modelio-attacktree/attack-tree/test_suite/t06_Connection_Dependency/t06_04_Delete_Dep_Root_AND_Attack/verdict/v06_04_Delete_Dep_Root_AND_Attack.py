@@ -27,8 +27,6 @@ def main():
 	diagram = diagrams.get(0)
 
 
-	dependency = tree.getDependsOnDependency().get(0)
-
 	if not tree.getDependsOnDependency().isEmpty():
 		outputError("/errors_output/t06_02_Delete_Dep_Root_AND.err", "Expected to find Tree with no dependencies \n")
 

@@ -38,7 +38,7 @@ def main():
 		outputError("/errors_output/t06_06_Delete_Dep_Root_AND_OR.err", "Expected AND Node to have no children \n")
 
 	if tree.getOwnedElement().size() != 2 :
-		outputError("/errors_output/t06_06_Delete_Dep_Root_AND_OR.err", "Expected to find Tree node with 2 owned elments, instead found : " + tree.getOwnedElement().size() +  " \n")
+		outputError("/errors_output/t06_06_Delete_Dep_Root_AND_OR.err", "Expected to find Tree node with 2 owned elments, instead found : " + str(tree.getOwnedElement().size()) +  " \n")
 
 	
 

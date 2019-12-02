@@ -30,7 +30,7 @@ def main():
 
 	dependency = tree.getDependsOnDependency().get(0)
 
-	if not dependency.getDependsOn().equal(andNode):
+	if not dependency.getDependsOn().equals(andNode):
 		outputError("/errors_output/t06_01_Create_Dep_Root_AND.err", "Expected to find ABD node connected to tree \n")
 
 

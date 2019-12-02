@@ -25,7 +25,7 @@ def main():
 
 
 
-	andNode = tree.getOwnedElement.get(0)
+	andNode = tree.getOwnedElement().get(0)
 	dependency = andNode.getDependsOnDependency().get(0)
 
 	t = session.createTransaction("Delete Dependency")

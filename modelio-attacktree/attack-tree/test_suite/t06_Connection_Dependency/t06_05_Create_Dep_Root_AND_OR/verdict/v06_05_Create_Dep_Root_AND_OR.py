@@ -31,10 +31,10 @@ def main():
 	andNode = dependency.getDependsOn()
 
 	if andNode.getDependsOnDependency().size() != 2 :
-		outputError("/errors_output/t06_05_Create_Dep_Root_AND_OR.err", "Expected to find AND node with 2 outggoing dependencies, instead found : " + andNode.getDependsOnDependency().size() +  " \n")
+		outputError("/errors_output/t06_05_Create_Dep_Root_AND_OR.err", "Expected to find AND node with 2 outggoing dependencies, instead found : " + str(andNode.getDependsOnDependency().size()) +  " \n")
 
 	if tree.getOwnedElement.size() != 1 :
-		outputError("/errors_output/t06_05_Create_Dep_Root_AND_OR.err", "Expected to find Tree node with one node child, instead found : " + tree.getOwnedElement.size() +  " \n")
+		outputError("/errors_output/t06_05_Create_Dep_Root_AND_OR.err", "Expected to find Tree node with one node child, instead found : " + str(tree.getOwnedElement.size()) +  " \n")
 
 
 #
