@@ -16,7 +16,7 @@ def main():
 
 
 	# testPackage
-	testPackage = findPackage(modelPackage, "t07_Counter_Measure", "t07_04_Delete_CounterMeasure_on_AND_Child")
+	testPackage = findPackage(modelPackage, "t07_Counter_Measure", "t07_06_Delete_CounterMeasure_on_OR_Child")
 	assert testPackage is not None, "testPackage is None type"
 
 	tree = testPackage.getOwnedElement().get(0)
@@ -28,39 +28,39 @@ def main():
 
 
 	# Insert your test here
-	andNode = tree.getOwnedElement().get(0)
+	orNode = tree.getOwnedElement().get(0)
 
-	andNodeOwnedElements = andNode.getOwnedElement()
+	orNodeOwnedElements = orNode.getOwnedElement()
 	
-	if andNodeOwnedElements.get(0).getName() == "Attack" :
-		attack = andNodeOwnedElements.get(0)
-		attack1 = andNodeOwnedElements.get(1)
+	if orNodeOwnedElements.get(0).getName() == "Attack" :
+		attack = orNodeOwnedElements.get(0)
+		attack1 = orNodeOwnedElements.get(1)
 	else :
-		attack1 = andNodeOwnedElements.get(0)
-		attack = andNodeOwnedElements.get(1)
+		attack1 = orNodeOwnedElements.get(0)
+		attack = orNodeOwnedElements.get(1)
 	
 
 	# Verify if tree has notes
 	if not attack1.getDescriptor().isEmpty():
-		outputError("/errors_output/t07_04_Delete_CounterMeasure_on_AND_Child.err", "Expected to attack1 with no notes \n")
+		outputError("/errors_output/t07_06_Delete_CounterMeasure_on_OR_Child.err", "Expected to attack1 with no notes \n")
 
 	# Verify Countered Tag value
 	if tree.getTag("AttackTreeDesigner", "Attack", "Countered attack").getActual().get(0).getValue() != "false" :
-		outputError("/errors_output/t07_04_Delete_CounterMeasure_on_AND_Child.err", "Expected to find tree with the Countered attack having the value 'false', instead found  " + tree.getTag("AttackTreeDesigner", "Attack", "Countered attack").getActual().get(0).getValue() + "\n")
+		outputError("/errors_output/t07_06_Delete_CounterMeasure_on_OR_Child.err", "Expected to find tree with the Countered attack having the value 'false', instead found  " + tree.getTag("AttackTreeDesigner", "Attack", "Countered attack").getActual().get(0).getValue() + "\n")
 	if attack.getTag("AttackTreeDesigner", "Attack", "Countered attack").getActual().get(0).getValue() != "false" :
-		outputError("/errors_output/t07_04_Delete_CounterMeasure_on_AND_Child.err", "Expected to find attack1 with the Countered attack having the value 'true', instead found  " + attack1.getTag("AttackTreeDesigner", "Attack", "Countered attack").getActual().get(0).getValue() + "\n")
+		outputError("/errors_output/t07_06_Delete_CounterMeasure_on_OR_Child.err", "Expected to find attack1 with the Countered attack having the value 'false', instead found  " + attack1.getTag("AttackTreeDesigner", "Attack", "Countered attack").getActual().get(0).getValue() + "\n")
 	if attack1.getTag("AttackTreeDesigner", "Attack", "Countered attack").getActual().get(0).getValue() != "false" :
-		outputError("/errors_output/t07_04_Delete_CounterMeasure_on_AND_Child.err", "Expected to find attack with the Countered attack having the value 'false', instead found  " + attack.getTag("AttackTreeDesigner", "Attack", "Countered attack").getActual().get(0).getValue() + "\n")
+		outputError("/errors_output/t07_06_Delete_CounterMeasure_on_OR_Child.err", "Expected to find attack with the Countered attack having the value 'false', instead found  " + attack.getTag("AttackTreeDesigner", "Attack", "Countered attack").getActual().get(0).getValue() + "\n")
 
 	# Color of Tree
 	diagramService = Modelio.getInstance().getDiagramService()
 	diagramHandle = diagramService.getDiagramHandle(diagram)
 	if diagramHandle.getDiagramGraphics(tree).get(0).getFillColor() != "250,240,210" :
-		outputError("/errors_output/t07_04_Delete_CounterMeasure_on_AND_Child.err", "Expected tree to have color 250,240,210 ! Instead we found the color " + diagramHandle.getDiagramGraphics(tree).get(0).getFillColor() + "\n")
+		outputError("/errors_output/t07_06_Delete_CounterMeasure_on_OR_Child.err", "Expected tree to have color 250,240,210 ! Instead we found the color " + diagramHandle.getDiagramGraphics(tree).get(0).getFillColor() + "\n")
 	if diagramHandle.getDiagramGraphics(attack1).get(0).getFillColor() != "250,240,210" :
-		outputError("/errors_output/t07_04_Delete_CounterMeasure_on_AND_Child.err", "Expected attack1 to have color 250,240,210 ! Instead we found the color " + diagramHandle.getDiagramGraphics(attack1).get(0).getFillColor() + "\n")
+		outputError("/errors_output/t07_06_Delete_CounterMeasure_on_OR_Child.err", "Expected attack1 to have color 250,240,210 ! Instead we found the color " + diagramHandle.getDiagramGraphics(attack1).get(0).getFillColor() + "\n")
 	if diagramHandle.getDiagramGraphics(attack).get(0).getFillColor() != "250,240,210" :
-		outputError("/errors_output/t07_04_Delete_CounterMeasure_on_AND_Child.err", "Expected attack to have color 250,240,210 ! Instead we found the color " + diagramHandle.getDiagramGraphics(attack).get(0).getFillColor() + "\n")
+		outputError("/errors_output/t07_06_Delete_CounterMeasure_on_OR_Child.err", "Expected attack to have color 250,240,210 ! Instead we found the color " + diagramHandle.getDiagramGraphics(attack).get(0).getFillColor() + "\n")
 
 
 

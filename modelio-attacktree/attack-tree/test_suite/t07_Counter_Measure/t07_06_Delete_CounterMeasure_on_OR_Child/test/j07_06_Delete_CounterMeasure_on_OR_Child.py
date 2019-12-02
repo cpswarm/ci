@@ -1,7 +1,4 @@
-import os
-import glob
-from java.nio.file import Paths
-from org.modelio.gproject.gproject import GProject
+
 
 #
 # MAIN
@@ -14,27 +11,38 @@ def main():
 	assert attackTreePeerModule is not None, "attackTreePeerModule is None type"
 	modelPackage = root.getModel().get(0)
 
-
-	# add your test here in testPackage
-	testPackage = findPackage(modelPackage, "t06_Connection_Dependency", "t06_03_Create_Dep_Root_AND_Attack")
+	# testPackage
+	testPackage = findPackage(modelPackage, "t07_Counter_Measure", "t07_06_Delete_CounterMeasure_on_OR_Child")
 	assert testPackage is not None, "testPackage is None type"
 
-
 	tree = testPackage.getOwnedElement().get(0)
-	assert tree.getName() == "Tree", "Cannot find a trrr with the name 'Tree', instead we found " + tree.getName()
+	assert tree.getName() == "Tree", "Cannot find a tree with the name 'Tree', instead we found " + tree.getName()
 
 	diagrams = tree.getDiagramElement()
 	diagram = diagrams.get(0)
 
 
-	dependency = tree.getDependsOnDependency().get(0)
-	andNode = dependency.getDependsOn()
+	# Insert your test here
+	orNode = tree.getOwnedElement().get(0)
 
-	if andNode.getDependsOnDependency().size() != 2 :
-		outputError("/errors_output/t06_03_Create_Dep_Root_AND_Attack.err", "Expected to find AND node with 2 outggoing dependencies, instead found : " + str(andNode.getDependsOnDependency().size()) +  " \n")
+	orNodeOwnedElements = orNode.getOwnedElement()
+	
+	if orNodeOwnedElements.get(0).getName() == "Attack" :
+		attack = orNodeOwnedElements.get(0)
+		attack1 = orNodeOwnedElements.get(1)
+	else :
+		attack1 = orNodeOwnedElements.get(0)
+		attack = orNodeOwnedElements.get(1)
+		
+	t = session.createTransaction("delete Counter Measure")
 
-	if tree.getOwnedElement().size() != 1 :
-		outputError("/errors_output/t06_03_Create_Dep_Root_AND_Attack.err", "Expected to find Tree node with one node child, instead found : " + str(tree.getOwnedElement().size()) +  " \n")
+	attack1Note = attack1.getDescriptor().get(0)
+	attack1Note.delete()
+
+	t.commit()
+
+	coreSession.save(None)
+
 
 
 #

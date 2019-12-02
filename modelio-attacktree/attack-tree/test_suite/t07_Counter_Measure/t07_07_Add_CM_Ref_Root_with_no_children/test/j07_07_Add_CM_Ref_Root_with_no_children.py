@@ -1,7 +1,4 @@
-import os
-import glob
-from java.nio.file import Paths
-from org.modelio.gproject.gproject import GProject
+
 
 #
 # MAIN
@@ -14,27 +11,33 @@ def main():
 	assert attackTreePeerModule is not None, "attackTreePeerModule is None type"
 	modelPackage = root.getModel().get(0)
 
-
-	# add your test here in testPackage
-	testPackage = findPackage(modelPackage, "t06_Connection_Dependency", "t06_05_Create_Dep_Root_AND_OR")
+	# testPackage
+	testPackage = findPackage(modelPackage, "t07_Counter_Measure", "t07_07_Add_CM_Ref_Root_with_no_children")
 	assert testPackage is not None, "testPackage is None type"
 
+	testPackageOwnedElements = testPackage.getOwnedElement()
+	tree = testPackageOwnedElements.get(0)
+	tree1 = testPackageOwnedElements.get(1)
 
-	tree = testPackage.getOwnedElement().get(0)
+	if tree.getName() == "Tree1" :
+		tree = testPackageOwnedElements.get(1)
+		tree1 = testPackageOwnedElements.get(0)
+	
 	assert tree.getName() == "Tree", "Cannot find a tree with the name 'Tree', instead we found " + tree.getName()
 
-	diagrams = tree.getDiagramElement()
-	diagram = diagrams.get(0)
+	diagrams1 = tree1.getDiagramElement()
+	diagram1 = diagrams1.get(0)
 
 
-	dependency = tree.getDependsOnDependency().get(0)
-	andNode = dependency.getDependsOn()
+	# Insert your test here
+	t = session.createTransaction("create Counter Measure")
 
-	if andNode.getDependsOnDependency().size() != 2 :
-		outputError("/errors_output/t06_05_Create_Dep_Root_AND_OR.err", "Expected to find AND node with 2 outggoing dependencies, instead found : " + str(andNode.getDependsOnDependency().size()) +  " \n")
+	attackTreePeerModule.createCounterMeasure(tree1, diagram1)
 
-	if tree.getOwnedElement().size() != 1 :
-		outputError("/errors_output/t06_05_Create_Dep_Root_AND_OR.err", "Expected to find Tree node with one node child, instead found : " + str(tree.getOwnedElement().size()) +  " \n")
+	t.commit()
+
+	coreSession.save(None)
+
 
 
 #
