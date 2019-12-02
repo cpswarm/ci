@@ -28,7 +28,7 @@ def main():
 	andNode = treeOwnedElements.get(1)
 
 	if orNode.getName() == "AND" :
-		orNode.treeOwnedElements.get(1)
+		orNode = treeOwnedElements.get(1)
 		andNode = treeOwnedElements.get(0)
 
 

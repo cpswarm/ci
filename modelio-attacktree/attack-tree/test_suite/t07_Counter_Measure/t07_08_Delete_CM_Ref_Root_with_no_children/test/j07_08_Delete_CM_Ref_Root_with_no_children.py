@@ -11,31 +11,25 @@ def main():
 	assert attackTreePeerModule is not None, "attackTreePeerModule is None type"
 	modelPackage = root.getModel().get(0)
 
-
-	# add your test here in testPackage
-	testPackage = findPackage(modelPackage, "t06_Connection_Dependency", "t06_03_Create_Dep_Root_AND_Attack")
+	# testPackage
+	testPackage = findPackage(modelPackage, "t07_Counter_Measure", "t07_08_Delete_CM_Ref_Root_with_no_children")
 	assert testPackage is not None, "testPackage is None type"
 
+	testPackageOwnedElements = testPackage.getOwnedElement()
+	tree = testPackageOwnedElements.get(0)
+	tree1 = testPackageOwnedElements.get(1)
 
-	tree = testPackage.getOwnedElement().get(0)
-	assert tree.getName() == "Tree", "Cannot find a tree with the name 'Tree', instead we found " + tree.getName()
+	if tree.getName() == "Tree1" :
+		tree = testPackageOwnedElements.get(1)
+		tree1 = testPackageOwnedElements.get(0)
+	
+	assert tree1.getName() == "Tree1", "Cannot find a tree with the name 'Tree1', instead we found " + tree1.getName()
 
-	diagrams = tree.getDiagramElement()
-	diagram = diagrams.get(0)
+	# Insert your test here
+	t = session.createTransaction("create Counter Measure")
 
-	treeOwnedElement = tree.getOwnedElement()
-	attackNode = treeOwnedElement.get(0)
-	andNode = treeOwnedElement.get(1)
-
-	if attackNode.getName() == "AND" :
-		attackNode = treeOwnedElement.get(1)
-		andNode = treeOwnedElement.get(0)
-
-
-
-	t = session.createTransaction("Create Dependency")
-
-	attackTreePeerModule.createConnection(andNode, attackNode, diagram)
+	attack1Note = tree1.getDescriptor().get(0)
+	attack1Note.delete()
 
 	t.commit()
 

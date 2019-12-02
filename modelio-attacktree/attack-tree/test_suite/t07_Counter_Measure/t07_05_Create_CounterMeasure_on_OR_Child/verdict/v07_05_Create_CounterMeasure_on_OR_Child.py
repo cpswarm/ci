@@ -49,9 +49,9 @@ def main():
 	# Verify Countered Tag value
 	if tree.getTag("AttackTreeDesigner", "Attack", "Countered attack").getActual().get(0).getValue() != "false" :
 		outputError("/errors_output/t07_05_Create_CounterMeasure_on_OR_Child.err", "Expected to find tree with the Countered attack having the value 'false', instead found  " + tree.getTag("AttackTreeDesigner", "Attack", "Countered attack").getActual().get(0).getValue() + "\n")
-	if attack.getTag("AttackTreeDesigner", "Attack", "Countered attack").getActual().get(0).getValue() != "true" :
+	if attack1.getTag("AttackTreeDesigner", "Attack", "Countered attack").getActual().get(0).getValue() != "true" :
 		outputError("/errors_output/t07_05_Create_CounterMeasure_on_OR_Child.err", "Expected to find attack1 with the Countered attack having the value 'true', instead found  " + attack1.getTag("AttackTreeDesigner", "Attack", "Countered attack").getActual().get(0).getValue() + "\n")
-	if attack1.getTag("AttackTreeDesigner", "Attack", "Countered attack").getActual().get(0).getValue() != "false" :
+	if attack.getTag("AttackTreeDesigner", "Attack", "Countered attack").getActual().get(0).getValue() != "false" :
 		outputError("/errors_output/t07_05_Create_CounterMeasure_on_OR_Child.err", "Expected to find attack with the Countered attack having the value 'false', instead found  " + attack.getTag("AttackTreeDesigner", "Attack", "Countered attack").getActual().get(0).getValue() + "\n")
 
 	# Color of Tree
