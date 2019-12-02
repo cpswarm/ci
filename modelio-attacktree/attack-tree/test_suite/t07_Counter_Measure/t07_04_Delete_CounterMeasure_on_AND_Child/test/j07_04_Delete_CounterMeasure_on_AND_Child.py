@@ -12,7 +12,7 @@ def main():
 	modelPackage = root.getModel().get(0)
 
 	# testPackage
-	testPackage = findPackage(modelPackage, "t07_Counter_Measure", "t07_03_Create_CounterMeasure_on_AND_Child")
+	testPackage = findPackage(modelPackage, "t07_Counter_Measure", "t07_04_Delete_CounterMeasure_on_AND_Child")
 	assert testPackage is not None, "testPackage is None type"
 
 	tree = testPackage.getOwnedElement().get(0)
@@ -33,10 +33,11 @@ def main():
 	else :
 		attack1 = andNodeOwnedElements.get(0)
 		attack = andNodeOwnedElements.get(1)
+		
+	t = session.createTransaction("delete Counter Measure")
 
-	t = session.createTransaction("create Counter Measure")
-
-	attackTreePeerModule.createCounterMeasure(attack1, diagram)
+	attack1Note = attack1.getDescriptor().get(0)
+	attack1Note.delete()
 
 	t.commit()
 
