@@ -12,7 +12,7 @@ def main():
 	modelPackage = root.getModel().get(0)
 
 	# testPackage
-	testPackage = findPackage(modelPackage, "t07_Counter_Measure", "t07_08_Delete_CM_Ref_Root_with_no_children")
+	testPackage = findPackage(modelPackage, "t07_Counter_Measure", "t07_10_Delete_CM_Ref_Root_with_AND_children")
 	assert testPackage is not None, "testPackage is None type"
 
 	testPackageOwnedElements = testPackage.getOwnedElement()
