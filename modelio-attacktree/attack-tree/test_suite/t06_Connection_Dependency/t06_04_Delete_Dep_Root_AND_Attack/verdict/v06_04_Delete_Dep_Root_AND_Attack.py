@@ -16,7 +16,7 @@ def main():
 
 
 	# add your test here in testPackage
-	testPackage = findPackage(modelPackage, "t06_Connection_Dependency", "t06_02_Delete_Dep_Root_AND")
+	testPackage = findPackage(modelPackage, "t06_Connection_Dependency", "t06_04_Delete_Dep_Root_AND_Attack")
 	assert testPackage is not None, "testPackage is None type"
 
 
@@ -28,7 +28,7 @@ def main():
 
 
 	if not tree.getDependsOnDependency().isEmpty():
-		outputError("/errors_output/t06_02_Delete_Dep_Root_AND.err", "Expected to find Tree with no dependencies \n")
+		outputError("/errors_output/t06_04_Delete_Dep_Root_AND_Attack.err", "Expected to find Tree with no dependencies \n")
 
 
 

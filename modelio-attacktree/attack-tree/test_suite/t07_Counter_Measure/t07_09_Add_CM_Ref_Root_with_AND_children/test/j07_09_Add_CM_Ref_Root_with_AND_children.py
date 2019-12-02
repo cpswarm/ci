@@ -11,23 +11,35 @@ def main():
 	assert attackTreePeerModule is not None, "attackTreePeerModule is None type"
 	modelPackage = root.getModel().get(0)
 
-
-	# add your test here in testPackage
-	testPackage = findPackage(modelPackage, "t06_Connection_Dependency", "t06_04_Delete_Dep_Root_AND_Attack")
+	# testPackage
+	testPackage = findPackage(modelPackage, "t07_Counter_Measure", "t07_09_Add_CM_Ref_Root_with_AND_children")
 	assert testPackage is not None, "testPackage is None type"
 
+	testPackageOwnedElements = testPackage.getOwnedElement()
+	tree = testPackageOwnedElements.get(0)
+	tree1 = testPackageOwnedElements.get(1)
 
-	tree = testPackage.getOwnedElement().get(0)
+	if tree.getName() == "Tree1" :
+		tree = testPackageOwnedElements.get(1)
+		tree1 = testPackageOwnedElements.get(0)
+	
 	assert tree.getName() == "Tree", "Cannot find a tree with the name 'Tree', instead we found " + tree.getName()
 
-	diagrams = tree.getDiagramElement()
-	diagram = diagrams.get(0)
+	diagrams1 = tree1.getDiagramElement()
+	diagram1 = diagrams1.get(0)
 
-	dependency = tree.getDependsOnDependency().get(0)
+	andNode = tree1.getOwnedElement().get(0)
+	attack = andNode.getOwnedElement().get(0)
+	attack1 = andNode.getOwnedElement().get(1)
+	if attack1.getName == "Attack" :
+		attack = andNode.getOwnedElement().get(1)
+		attack1 = andNode.getOwnedElement().get(0)
+	
 
-	t = session.createTransaction("Delete Dependency")
+	# Insert your test here
+	t = session.createTransaction("create Counter Measure")
 
-	dependency.delete()
+	attackTreePeerModule.createCounterMeasure(attack1, diagram1)
 
 	t.commit()
 
