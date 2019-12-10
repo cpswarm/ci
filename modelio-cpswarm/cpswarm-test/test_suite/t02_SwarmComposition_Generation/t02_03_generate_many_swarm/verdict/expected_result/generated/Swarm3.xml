@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<swarm name="Swarm3">
+    <SwarmMember name="Swarm Member" number="3"/>
+</swarm>
