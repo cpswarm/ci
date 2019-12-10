@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Extract Modelio Test Project in Workspace
-/cpswarm-test/unzip cpswarm_test_project.zip  -d '/cpswarm-test/workspace'
+unzip /cpswarm-test/cpswarm_test_project.zip  -d /cpswarm-test/workspace
 
 # Deploy module on modelio test project
 echo "------------->running deploy-module.py jython script" 
