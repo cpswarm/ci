@@ -11,7 +11,8 @@ RUN apt update && \
     apt install -yq wget xvfb && \
     mkdir /attack-tree && \
     wget -O /attack-tree/${MODELIO_PKG_NAME}.deb https://www.modelio.org/download/send/31-modelio-3-8-1/147-modelio-3-8-1-debian-ubuntu-64-bit.html && \
-    apt install -yq /attack-tree/${MODELIO_PKG_NAME}.deb
+    apt install -yq /attack-tree/${MODELIO_PKG_NAME}.deb \
+                unzip
     
 ## The following command would create a virtual display with Xvfb and then generate files according to the project setting
 

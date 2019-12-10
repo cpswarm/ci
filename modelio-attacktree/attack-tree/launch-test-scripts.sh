@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Extract Modelio Test Project in Workspace
+unzip /attack-tree/modelio_test_project.zip  -d /attack-tree/workspace
+
 # Deploy module on modelio test project
 echo "------------->running deploy-module.py jython script" 
 xvfb-run --auto-servernum --server-num=1 modelio-open-source3.8 -consoleLog -workspace /attack-tree/workspace/ -project modelio_test_project -batch /attack-tree/deploy-module.py
