@@ -1,0 +1,3 @@
+<scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:cpswarm="http://my.custom-actions.domain/cpswarm/CUSTOM" version="1.0" initial="" name="Behavior_1">
+
+</scxml>

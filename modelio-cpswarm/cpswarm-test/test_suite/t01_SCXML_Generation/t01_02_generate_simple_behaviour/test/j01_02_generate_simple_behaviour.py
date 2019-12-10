@@ -13,11 +13,11 @@ def main():
 
 
 	# add your test here in testPackage
-	testPackage = findPackage(modelPackage, "t01_SCXML_Generation", "t01_01_generate_empty_behaviour")
+	testPackage = findPackage(modelPackage, "t01_SCXML_Generation", "t01_02_generate_simple_behaviour")
 	assert testPackage is not None, "testPackage is None type"
 
 	behavior = testPackage.getCompositionChildren().get(0)
-	assert behavior.getName() == "Behavior_1" , "Expected name Behavior"
+	assert behavior.getName() == "Behavior_2" , "Expected name Behavior"
 
 	cpswarmPeerModule.generateSCXML(behavior)
 
