@@ -18,7 +18,7 @@ def main():
 
 	swarm1 = testPackage.getOwnedElement().get(0)
 	assert swarm1.getName() == "Swarm1" , "Expected name Swarm1"
-
+	
 	cpswarmPeerModule.generateSwarmComposition(swarm1)
 
 
