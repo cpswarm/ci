@@ -26,7 +26,7 @@ def main():
 
 	andNode = tree.getOwnedElement().get(0)
 	for node in andNode.getOwnedElement():
-		if(node.getName == "Attack"):
+		if(node.getName() == "Attack"):
 			outputError("/errors_output/t03_02_delete_attack.err", "Error! The attack with the name 'Attack' should have been deleted \n")
 
 

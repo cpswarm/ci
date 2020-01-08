@@ -32,14 +32,14 @@ def main():
 	orNode = tree.getOwnedElement().get(0)
 	attack = orNode.getOwnedElement().get(0)
 	treeRef = orNode.getOwnedElement().get(1)
-	if treeRef.getName == "Attack" :
+	if treeRef.getName() == "Attack" :
 		attack = orNode.getOwnedElement().get(1)
 		treeRef = orNode.getOwnedElement().get(0)
 
 	orNode1 = tree1.getOwnedElement().get(0)
 	attack_Tree1 = orNode1.getOwnedElement().get(0)
 	attack1_Tree1 = orNode1.getOwnedElement().get(1)
-	if attack1_Tree1.getName == "Attack" :
+	if attack1_Tree1.getName() == "Attack" :
 		attack_Tree1 = orNode.getOwnedElement().get(1)
 		attack1_Tree1 = orNode.getOwnedElement().get(0)
 

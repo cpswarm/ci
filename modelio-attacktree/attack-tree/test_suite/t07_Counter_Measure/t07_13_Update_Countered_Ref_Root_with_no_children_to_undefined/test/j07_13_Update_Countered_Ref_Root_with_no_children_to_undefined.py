@@ -11,22 +11,36 @@ def main():
 	assert attackTreePeerModule is not None, "attackTreePeerModule is None type"
 	modelPackage = root.getModel().get(0)
 
-
-	# add your test here in testPackage
-	testPackage = findPackage(modelPackage, "t03_create_attack", "t03_02_delete_attack")
+	# testPackage
+	testPackage = findPackage(modelPackage, "t07_Counter_Measure", "t07_11_Add_CM_Ref_Root_with_OR_children")
 	assert testPackage is not None, "testPackage is None type"
 
+	testPackageOwnedElements = testPackage.getOwnedElement()
+	tree = testPackageOwnedElements.get(0)
+	tree1 = testPackageOwnedElements.get(1)
 
-	tree = testPackage.getOwnedElement().get(0)
+	if tree.getName() == "Tree1" :
+		tree = testPackageOwnedElements.get(1)
+		tree1 = testPackageOwnedElements.get(0)
+	
 	assert tree.getName() == "Tree", "Cannot find a tree with the name 'Tree', instead we found " + tree.getName()
 
 
-	t = session.createTransaction("delete an attack")
+	andNode = tree.getOwnedElement().get(0)
+	andNodeOwnedElements = andNode.getOwnedElement()
+	attack = andNodeOwnedElements.get(0)
+	treeReference = andNodeOwnedElements.get(1)
 
-	andNode =  tree.getOwnedElement().get(0)
-	for node in andNode.getOwnedElement():
-		if(node.getName() == "Attack"):
-			node.delete()
+	if treeReference.getName() == "Attack" :
+		attack = andNodeOwnedElements.get(1)
+		treeReference = andNodeOwnedElements.get(0)
+
+	
+	
+	# Insert your test here
+	t = session.createTransaction("create Counter Measure")
+
+	attackTreePeerModule.updateReference(treeReference, "")
 
 	t.commit()
 

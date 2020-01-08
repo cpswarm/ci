@@ -16,7 +16,7 @@ def main():
 
 
 	# testPackage
-	testPackage = findPackage(modelPackage, "t07_Counter_Measure", "t07_08_Delete_CM_Ref_Root_with_no_children")
+	testPackage = findPackage(modelPackage, "t07_Counter_Measure", "t07_13_Update_Countered_Ref_Root_with_no_children_to_undefined")
 	assert testPackage is not None, "testPackage is None type"
 
 	testPackageOwnedElements = testPackage.getOwnedElement()
@@ -30,58 +30,47 @@ def main():
 	assert tree.getName() == "Tree", "Cannot find a tree with the name 'Tree', instead we found " + tree.getName()
 
 	andNode = tree.getOwnedElement().get(0)
-	attack = andNode.getOwnedElement().get(0)
-	treeRef = andNode.getOwnedElement().get(1)
+	andNodeOwnedElements = andNode.getOwnedElement()
+	attack = andNodeOwnedElements.get(0)
+	treeRef = andNodeOwnedElements.get(1)
 	if treeRef.getName() == "Attack" :
-		attack = andNode.getOwnedElement().get(1)
-		treeRef = andNode.getOwnedElement().get(0)
+		attack = andNodeOwnedElements.get(1)
+		treeRef = andNodeOwnedElements.get(0)
+
+
 
 	diagrams = tree.getDiagramElement()
 	diagram = diagrams.get(0)
 
-	diagrams1 = tree1.getDiagramElement()
-	diagram1 = diagrams1.get(0)
 
 
 
 	# Insert your test here
-	
-	# Verify Name and Content of Note
-	if not tree1.getDescriptor().isEmpty():
-		outputError("/errors_output/t07_08_Delete_CM_Ref_Root_with_no_children.err", "Expected to find tree1 with no notes \n")
+
 
 	# Verify Countered Tag value
 	if tree.getTag("AttackTreeDesigner", "Attack", "Countered attack").getActual().get(0).getValue() != "false" :
-		outputError("/errors_output/t07_08_Delete_CM_Ref_Root_with_no_children.err", 
+		outputError("/errors_output/t07_13_Update_Countered_Ref_Root_with_no_children_to_undefined.err", 
 		"Expected to find tree with the Countered attack having the value 'false', instead found  " + tree.getTag("AttackTreeDesigner", "Attack", "Countered attack").getActual().get(0).getValue() + "\n")
 	if attack.getTag("AttackTreeDesigner", "Attack", "Countered attack").getActual().get(0).getValue() != "false" :
-		outputError("/errors_output/t07_08_Delete_CM_Ref_Root_with_no_children.err", 
+		outputError("/errors_output/t07_13_Update_Countered_Ref_Root_with_no_children_to_undefined.err", 
 		"Expected to find attack with the Countered attack having the value 'false', instead found  " + attack.getTag("AttackTreeDesigner", "Attack", "Countered attack").getActual().get(0).getValue() + "\n")
-
-	if tree1.getTag("AttackTreeDesigner", "Attack", "Countered attack").getActual().get(0).getValue() != "false" :
-		outputError("/errors_output/t07_08_Delete_CM_Ref_Root_with_no_children.err", 
-		"Expected to find tree1 with the Countered attack having the value 'false', instead found  " + tree1.getTag("AttackTreeDesigner", "Attack", "Countered attack").getActual().get(0).getValue() + "\n")
 
 	# Colors
 	diagramService = Modelio.getInstance().getDiagramService()
 
 	diagramHandle = diagramService.getDiagramHandle(diagram)
 	if diagramHandle.getDiagramGraphics(tree).get(0).getFillColor() != "250,240,210" :
-		outputError("/errors_output/t07_08_Delete_CM_Ref_Root_with_no_children.err", 
+		outputError("/errors_output/t07_13_Update_Countered_Ref_Root_with_no_children_to_undefined.err", 
 		"Expected tree to have color 250,240,210 ! Instead we found the color " + diagramHandle.getDiagramGraphics(tree).get(0).getFillColor() + "\n")
 
 	if diagramHandle.getDiagramGraphics(attack).get(0).getFillColor() != "250,240,210" :
-		outputError("/errors_output/t07_08_Delete_CM_Ref_Root_with_no_children.err", 
+		outputError("/errors_output/t07_13_Update_Countered_Ref_Root_with_no_children_to_undefined.err", 
 		"Expected attack to have color 250,240,210 ! Instead we found the color " + diagramHandle.getDiagramGraphics(attack).get(0).getFillColor() + "\n")
 	
 	if diagramHandle.getDiagramGraphics(treeRef).get(0).getFillColor() != "250,240,210" :
-		outputError("/errors_output/t07_08_Delete_CM_Ref_Root_with_no_children.err", 
+		outputError("/errors_output/t07_13_Update_Countered_Ref_Root_with_no_children_to_undefined.err", 
 		"Expected treeRef to have color 250,240,210 ! Instead we found the color " + diagramHandle.getDiagramGraphics(treeRef).get(0).getFillColor() + "\n")
-	
-	diagramHandle1 = diagramService.getDiagramHandle(diagram1)
-	if diagramHandle1.getDiagramGraphics(tree1).get(0).getFillColor() != "250,240,210" :
-		outputError("/errors_output/t07_08_Delete_CM_Ref_Root_with_no_children.err", 
-		"Expected tree1 to have color 250,240,210 ! Instead we found the color " + diagramHandle1.getDiagramGraphics(tree1).get(0).getFillColor() + "\n")
 
 #
 # findPackage function

@@ -31,7 +31,7 @@ def main():
 	orNode = tree1.getOwnedElement().get(0)
 	attack = orNode.getOwnedElement().get(0)
 	attack1 = orNode.getOwnedElement().get(1)
-	if attack1.getName == "Attack" :
+	if attack1.getName() == "Attack" :
 		attack = orNode.getOwnedElement().get(1)
 		attack1 = orNode.getOwnedElement().get(0)
 	

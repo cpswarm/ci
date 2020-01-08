@@ -32,7 +32,7 @@ def main():
 	andNode = tree.getOwnedElement().get(0)
 	attack = andNode.getOwnedElement().get(0)
 	treeRef = andNode.getOwnedElement().get(1)
-	if treeRef.getName == "Attack" :
+	if treeRef.getName() == "Attack" :
 		attack = andNode.getOwnedElement().get(1)
 		treeRef = andNode.getOwnedElement().get(0)
 
