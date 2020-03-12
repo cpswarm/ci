@@ -8,9 +8,5 @@ RUN mvn install
 WORKDIR /home/frevo/frevo-next
 RUN mvn install
 
-WORKDIR /home/frevo/frevo-cpp-exporter
-RUN mvn install
-
 WORKDIR /home/frevo/frevo-xmpp
 RUN mvn install
-
